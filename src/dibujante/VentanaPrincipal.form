@@ -50,7 +50,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemRombo">
               <Properties>
-                <Property name="selected" type="boolean" value="true"/>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Rombo"/>
               </Properties>
             </MenuItem>
