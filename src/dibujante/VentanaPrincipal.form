@@ -48,6 +48,12 @@
                 <Property name="text" type="java.lang.String" value="Rectangulo"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemRombo">
+              <Properties>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Rombo"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>

@@ -4,6 +4,7 @@ import figuras.DibujoLibre;
 import figuras.Figura;
 import figuras.Linea;
 import figuras.Rectangulo;
+import figuras.Rombo;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
@@ -34,6 +35,9 @@ class PanelDeDibujo extends JPanel {
          }
          else if(ventana.getMenuItemRectangulo().isSelected() ){
            figuraActual = new Rectangulo(evento.getPoint());
+         }
+         else if(ventana.getMenuItemRombo().isSelected() ){
+           figuraActual = new Rombo(evento.getPoint());
          }
          else{
           figuraActual = new DibujoLibre( evento.getPoint() );
