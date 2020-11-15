@@ -12,7 +12,7 @@ import java.awt.BorderLayout;
  * @author josearielpereyra
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
-
+  
   /**
    * Creates new form VentanaPrincipal
    */
@@ -45,6 +45,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     menuItemLapiz = new javax.swing.JRadioButtonMenuItem();
     menuItemLinea = new javax.swing.JRadioButtonMenuItem();
     menuItemRectangulo = new javax.swing.JRadioButtonMenuItem();
+    menuItemRombo = new javax.swing.JRadioButtonMenuItem();
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -69,6 +70,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     grupoBotonesFiguras.add(menuItemRectangulo);
     menuItemRectangulo.setText("Rectangulo");
     jMenu2.add(menuItemRectangulo);
+
+    grupoBotonesFiguras.add(menuItemRombo);
+    menuItemRombo.setText("Rombo");
+    jMenu2.add(menuItemRombo);
 
     jMenuBar1.add(jMenu2);
 
@@ -121,6 +126,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JRadioButtonMenuItem menuItemLapiz;
   private javax.swing.JRadioButtonMenuItem menuItemLinea;
   private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
+  private javax.swing.JRadioButtonMenuItem menuItemRombo;
   // End of variables declaration//GEN-END:variables
 
   public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
@@ -133,5 +139,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
   public javax.swing.JRadioButtonMenuItem getMenuItemRectangulo() {
     return menuItemRectangulo;
+  }
+  
+  public javax.swing.JRadioButtonMenuItem getMenuItemRombo() {
+    return menuItemRombo;
   }
 }
