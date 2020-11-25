@@ -7,7 +7,7 @@ import java.awt.Point;
 
 /**
  *
- * @author Robinzon Montero Montero
+ * @author Robinzon Montero Montero y Emilio Jose Santana Holguin
  */
 public class TrianguloRectangulo extends Rectangulo{
     
