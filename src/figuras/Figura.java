@@ -16,7 +16,7 @@ public abstract class Figura {
   }
   
   public Figura(){
-    this( Color.BLACK);
+    this( Color.BLACK );
   }
   
   public abstract void actualizar( Point puntoActual );

@@ -4,6 +4,8 @@ import figuras.DibujoLibre;
 import figuras.Figura;
 import figuras.Linea;
 import figuras.Rectangulo;
+import figuras.Rombo;
+import figuras.TrianguloRectangulo;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.MouseAdapter;
@@ -35,6 +37,15 @@ class PanelDeDibujo extends JPanel {
          else if(ventana.getMenuItemRectangulo().isSelected() ){
            figuraActual = new Rectangulo(evento.getPoint());
          }
+         else if(ventana.getMenuItemRombo().isSelected() ){
+           figuraActual = new Rombo(evento.getPoint());
+         }
+         else if(ventana.getMenuItemCuadrado().isSelected() ){
+           figuraActual = new Rectangulo(evento.getPoint());
+         }
+          else if(ventana.getMenuItemTrianguloRectangulo().isSelected() ){
+           figuraActual = new TrianguloRectangulo(evento.getPoint());
+         }
          else{
           figuraActual = new DibujoLibre( evento.getPoint() );
          }
@@ -53,6 +64,7 @@ class PanelDeDibujo extends JPanel {
      });
   }
   
+  //Este es el metodo que dibuja las figuras en el panel de dibujo
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
