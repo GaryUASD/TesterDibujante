@@ -3,6 +3,7 @@ package dibujante;
 import figuras.DibujoLibre;
 import figuras.Figura;
 import figuras.Linea;
+import figuras.Paralelogramo;
 import figuras.Rectangulo;
 import figuras.Rombo;
 import figuras.TrianguloRectangulo;
@@ -43,8 +44,11 @@ class PanelDeDibujo extends JPanel {
          else if(ventana.getMenuItemCuadrado().isSelected() ){
            figuraActual = new Rectangulo(evento.getPoint());
          }
-          else if(ventana.getMenuItemTrianguloRectangulo().isSelected() ){
+         else if(ventana.getMenuItemTrianguloRectangulo().isSelected() ){
            figuraActual = new TrianguloRectangulo(evento.getPoint());
+         }
+         else if(ventana.getMenuItemParalelogramo().isSelected() ){
+           figuraActual = new Paralelogramo(evento.getPoint());
          }
          else{
           figuraActual = new DibujoLibre( evento.getPoint() );

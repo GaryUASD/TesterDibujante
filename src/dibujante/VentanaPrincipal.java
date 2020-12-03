@@ -48,6 +48,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         menuItemRombo = new javax.swing.JRadioButtonMenuItem();
         menuItemCuadrado = new javax.swing.JRadioButtonMenuItem();
         menuItemTrianguloRectangulo = new javax.swing.JRadioButtonMenuItem();
+        menuItemParalelogramo = new javax.swing.JRadioButtonMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -94,6 +95,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         });
         jMenu2.add(menuItemTrianguloRectangulo);
 
+        grupoBotonesFiguras.add(menuItemParalelogramo);
+        menuItemParalelogramo.setText("Paralelogramo");
+        menuItemParalelogramo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemParalelogramoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuItemParalelogramo);
+
         jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
@@ -108,6 +118,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void menuItemTrianguloRectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemTrianguloRectanguloActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_menuItemTrianguloRectanguloActionPerformed
+
+    private void menuItemParalelogramoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemParalelogramoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItemParalelogramoActionPerformed
 
   /**
    * @param args the command line arguments
@@ -153,6 +167,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
     private javax.swing.JRadioButtonMenuItem menuItemLapiz;
     private javax.swing.JRadioButtonMenuItem menuItemLinea;
+    private javax.swing.JRadioButtonMenuItem menuItemParalelogramo;
     private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
     private javax.swing.JRadioButtonMenuItem menuItemRombo;
     private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
@@ -180,5 +195,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   
   public javax.swing.JRadioButtonMenuItem getMenuItemTrianguloRectangulo() {
     return menuItemTrianguloRectangulo;
+  }
+  
+  public javax.swing.JRadioButtonMenuItem getMenuItemParalelogramo() {
+    return menuItemParalelogramo;
   }
 }
