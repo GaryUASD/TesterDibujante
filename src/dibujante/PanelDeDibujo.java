@@ -30,7 +30,7 @@ class PanelDeDibujo extends JPanel {
     this.addMouseListener(new MouseAdapter() {
        @Override
        public void mousePressed(MouseEvent evento) {
-         
+           
          if( ventana.getMenuItemLinea().isSelected() ) {
           figuraActual = new Linea( evento.getPoint(), evento.getPoint(), colorActual );
          }
@@ -49,10 +49,31 @@ class PanelDeDibujo extends JPanel {
          else{
           figuraActual = new DibujoLibre( evento.getPoint() );
          }
-                           
-         figuras.add(figuraActual );
+         
+         //Agregando los condicionales para seleccionar la figura a dibujar apartir de los iconos de las figuras.
+         
+        if(ventana.getBtnRectangulo().isSelected()){
+             figuraActual = new Rectangulo(evento.getPoint());
+        }
+        else if(ventana.getBtnLinea().isSelected()){
+            figuraActual = new Linea (evento.getPoint(), evento.getPoint(), colorActual);
+        }
+        else if(ventana.getBtnCuadrado().isSelected()){
+           figuraActual = new Rectangulo (evento.getPoint());
+        }
+        else if(ventana.getBtnTrianguloRectangulo().isSelected()){
+            figuraActual = new TrianguloRectangulo(evento.getPoint());
+        }
+        else if(ventana.getBtnRombo().isSelected()){
+            figuraActual = new Rombo(evento.getPoint());
+        }
+        else if(ventana.getBtnLapiz().isSelected()){
+            figuraActual = new DibujoLibre (evento.getPoint());
+        }       
+
+         figuras.add( figuraActual );
          repaint();
-       }
+       }                                                          
      });
      
      this.addMouseMotionListener(new MouseAdapter() {
