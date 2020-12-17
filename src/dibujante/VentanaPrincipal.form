@@ -66,6 +66,11 @@
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemCuadradoActionPerformed"/>
               </Events>
             </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTriangulo">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Triangulo"/>
+              </Properties>
+            </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemTrianguloRectangulo">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
@@ -76,6 +81,16 @@
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemTrianguloRectanguloActionPerformed"/>
               </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Triangulo Escaleno"/>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemFlecha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Flecha"/>
+              </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>
