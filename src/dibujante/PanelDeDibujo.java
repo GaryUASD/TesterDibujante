@@ -31,42 +31,13 @@ class PanelDeDibujo extends JPanel {
     public PanelDeDibujo(VentanaPrincipal ventana) {
         this.ventana = ventana;
         figuras = new ArrayList<>();
-        colorDeBorde = Color.BLACK;
-        Color colorTransparente = new Color(0, 0, 0, 0);
-        colorDeFondo = colorTransparente;
-        ventana.getBtnColorBorde().setBackground(colorDeBorde);
-        ventana.getBtnColorFondo().setBackground(colorDeFondo);
-
+        
         this.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent evento) {
-
-                //Codigo para definir los colores de borde y de fondo de las figuras   
-                Enumeration<AbstractButton> botonesColorBorde = ventana.getGrupoDeColores().getElements();
-
-                while (botonesColorBorde.hasMoreElements()) {
-                    AbstractButton botonActual = botonesColorBorde.nextElement();
-
-                    botonActual.addActionListener(new ActionListener() {
-                        @Override
-                        public void actionPerformed(ActionEvent e) {
-                            if (ventana.getBtnColorBorde().isSelected()) {
-                                colorDeBorde = botonActual.getBackground();
-                                ventana.getBtnColorBorde().setBackground(colorDeBorde);
-                            } else if (ventana.getBtnColorFondo().isSelected()) {
-                                colorDeFondo = botonActual.getBackground();
-                                ventana.getBtnColorFondo().setBackground(colorDeFondo);
-                            }
-                            
-                            //Codigo para reinicar las figuras a su color por defecto.
-//                            else if (ventana.getBtnReiniciarColores().isSelected()) {
-////                                colorDeFondo = colorTransparente;
-////                                colorDeBorde = Color.BLACK;
-////                            }
-                        }
-                    });
-                }
-
+              colorDeBorde = ventana.getBtnColorBorde().getBackground();
+              colorDeFondo = ventana.getBtnColorFondo().getBackground();
+              
                 //Condicionales para detectar cual es la figura seleccionada a dibujar  apartir de los menuItem
                 if (ventana.getMenuItemLinea().isSelected()) {
                     figuraActual = new Linea(evento.getPoint(), evento.getPoint(), colorDeBorde);
