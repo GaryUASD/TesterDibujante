@@ -23,9 +23,16 @@ import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Enumeration;
+import javax.swing.AbstractButton;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
 import javax.swing.JColorChooser;
 import javax.swing.JPopupMenu;
 import javax.swing.JToggleButton;
@@ -43,12 +50,13 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     Figura figuraActual;
     VentanaPrincipal ventana;
     Color colorActual;
+    public Color colorSeleccionado;
 
     public VentanaPrincipal() {
         initComponents();
 
         setTitle("Mi Aplicacion de Dibujo");
-        setSize(750, 700);
+        setSize(850, 800);
         setLocationRelativeTo(null);
 
         final PanelDeDibujo panelDeDibujo = new PanelDeDibujo(this);
@@ -71,19 +79,29 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
         jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
         jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
+        grupoDeColores = new javax.swing.ButtonGroup();
+        grupoBotonesRellenoColores = new javax.swing.ButtonGroup();
         ToolBar = new javax.swing.JToolBar();
         BtnG = new javax.swing.JButton();
         jSeparator2 = new javax.swing.JToolBar.Separator();
         btnLapiz = new javax.swing.JToggleButton();
+        jSeparator5 = new javax.swing.JToolBar.Separator();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btnColorBorde = new javax.swing.JToggleButton();
+        jLabel3 = new javax.swing.JLabel();
+        btnColorFondo = new javax.swing.JToggleButton();
+        jLabel4 = new javax.swing.JLabel();
+        btnReiniciarColores = new javax.swing.JToggleButton();
         jSeparator3 = new javax.swing.JToolBar.Separator();
         GridColors = new javax.swing.JPanel();
-        BLACK = new javax.swing.JToggleButton();
-        WHITE = new javax.swing.JToggleButton();
-        BLUE = new javax.swing.JToggleButton();
-        RED = new javax.swing.JToggleButton();
-        YELLOW = new javax.swing.JToggleButton();
-        GREEN = new javax.swing.JToggleButton();
-        BTcolor = new javax.swing.JButton();
+        btnBlack = new javax.swing.JToggleButton();
+        btnWhite = new javax.swing.JToggleButton();
+        btnBlue = new javax.swing.JToggleButton();
+        btnRed = new javax.swing.JToggleButton();
+        btnYellow = new javax.swing.JToggleButton();
+        btnGreen = new javax.swing.JToggleButton();
+        btnColor = new javax.swing.JButton();
         BtnColorC = new javax.swing.JButton();
         jSeparator4 = new javax.swing.JToolBar.Separator();
         jLabel2 = new javax.swing.JLabel();
@@ -93,6 +111,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btnRombo = new javax.swing.JToggleButton();
         btnCuadrado = new javax.swing.JToggleButton();
         btnLinea = new javax.swing.JToggleButton();
+        btnPentagon = new javax.swing.JToggleButton();
+        btnHexagon = new javax.swing.JToggleButton();
+        btnTriangle = new javax.swing.JToggleButton();
+        btnCircle = new javax.swing.JToggleButton();
+        btnElipse = new javax.swing.JToggleButton();
+        btnStrat = new javax.swing.JToggleButton();
+        btnParallelogram = new javax.swing.JToggleButton();
+        btnEscalene = new javax.swing.JToggleButton();
+        btnArrow = new javax.swing.JToggleButton();
+        btnSemiCircle = new javax.swing.JToggleButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem2_Save2 = new javax.swing.JMenuItem();
@@ -121,9 +149,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         BtnG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save.png"))); // NOI18N
         BtnG.setText("Guardar");
+        BtnG.setEnabled(false);
         BtnG.setFocusable(false);
         BtnG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         BtnG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        BtnG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGActionPerformed(evt);
+            }
+        });
         ToolBar.add(BtnG);
         ToolBar.add(jSeparator2);
 
@@ -133,34 +167,84 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btnLapiz.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnLapiz.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         ToolBar.add(btnLapiz);
+        ToolBar.add(jSeparator5);
+
+        jPanel2.setLayout(new java.awt.GridLayout(0, 1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Color de  Bordes:");
+        jPanel2.add(jLabel1);
+
+        btnColorBorde.setBackground(new java.awt.Color(0, 204, 51));
+        grupoBotonesRellenoColores.add(btnColorBorde);
+        btnColorBorde.setText(" ");
+        btnColorBorde.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 0, 0), null, new java.awt.Color(0, 0, 0)));
+        jPanel2.add(btnColorBorde);
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Color de Relleno:");
+        jPanel2.add(jLabel3);
+
+        btnColorFondo.setBackground(new java.awt.Color(0, 204, 51));
+        grupoBotonesRellenoColores.add(btnColorFondo);
+        btnColorFondo.setText(" ");
+        btnColorFondo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED, null, new java.awt.Color(0, 0, 0), null, new java.awt.Color(0, 0, 0)));
+        btnColorFondo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnColorFondoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnColorFondo);
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Reiniciar Colores:");
+        jPanel2.add(jLabel4);
+
+        grupoBotonesRellenoColores.add(btnReiniciarColores);
+        btnReiniciarColores.setText("Reset");
+        btnReiniciarColores.setEnabled(false);
+        btnReiniciarColores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReiniciarColoresActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnReiniciarColores);
+
+        ToolBar.add(jPanel2);
         ToolBar.add(jSeparator3);
 
         GridColors.setLayout(new java.awt.GridLayout(2, 0));
 
-        BLACK.setBackground(new java.awt.Color(0, 0, 0));
-        GridColors.add(BLACK);
+        btnBlack.setBackground(new java.awt.Color(0, 0, 0));
+        grupoDeColores.add(btnBlack);
+        GridColors.add(btnBlack);
 
-        WHITE.setBackground(new java.awt.Color(255, 255, 255));
-        GridColors.add(WHITE);
+        btnWhite.setBackground(new java.awt.Color(255, 255, 255));
+        grupoDeColores.add(btnWhite);
+        GridColors.add(btnWhite);
 
-        BLUE.setBackground(new java.awt.Color(0, 153, 255));
-        BLUE.setPreferredSize(new java.awt.Dimension(28, 28));
-        GridColors.add(BLUE);
+        btnBlue.setBackground(new java.awt.Color(0, 153, 255));
+        grupoDeColores.add(btnBlue);
+        btnBlue.setPreferredSize(new java.awt.Dimension(28, 28));
+        GridColors.add(btnBlue);
 
-        RED.setBackground(new java.awt.Color(255, 0, 51));
-        GridColors.add(RED);
+        btnRed.setBackground(new java.awt.Color(255, 0, 51));
+        grupoDeColores.add(btnRed);
+        GridColors.add(btnRed);
 
-        YELLOW.setBackground(new java.awt.Color(255, 255, 0));
-        GridColors.add(YELLOW);
+        btnYellow.setBackground(new java.awt.Color(255, 255, 0));
+        grupoDeColores.add(btnYellow);
+        GridColors.add(btnYellow);
 
-        GREEN.setBackground(new java.awt.Color(0, 204, 51));
-        GridColors.add(GREEN);
+        btnGreen.setBackground(new java.awt.Color(0, 204, 51));
+        grupoDeColores.add(btnGreen);
+        GridColors.add(btnGreen);
 
-        grupoBotonesFiguras.add(BTcolor);
-        BTcolor.setFocusable(false);
-        BTcolor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        BTcolor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        GridColors.add(BTcolor);
+        grupoDeColores.add(btnColor);
+        btnColor.setFocusable(false);
+        btnColor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnColor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        GridColors.add(btnColor);
 
         ToolBar.add(GridColors);
 
@@ -181,7 +265,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jLabel2.setText("Figuras");
         ToolBar.add(jLabel2);
 
-        jPanel1.setLayout(new java.awt.GridLayout(2, 0));
+        jPanel1.setLayout(new java.awt.GridLayout(3, 0));
 
         grupoBotonesFiguras.add(btnRectangulo);
         btnRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rectangle.png"))); // NOI18N
@@ -203,6 +287,56 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btnLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
         jPanel1.add(btnLinea);
 
+        grupoBotonesFiguras.add(btnPentagon);
+        btnPentagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pentagon.png"))); // NOI18N
+        btnPentagon.setEnabled(false);
+        jPanel1.add(btnPentagon);
+
+        grupoBotonesFiguras.add(btnHexagon);
+        btnHexagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hexagon.png"))); // NOI18N
+        btnHexagon.setEnabled(false);
+        jPanel1.add(btnHexagon);
+
+        grupoBotonesFiguras.add(btnTriangle);
+        btnTriangle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
+        btnTriangle.setEnabled(false);
+        jPanel1.add(btnTriangle);
+
+        grupoBotonesFiguras.add(btnCircle);
+        btnCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle.png"))); // NOI18N
+        btnCircle.setEnabled(false);
+        jPanel1.add(btnCircle);
+
+        grupoBotonesFiguras.add(btnElipse);
+        btnElipse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ellipse.png"))); // NOI18N
+        btnElipse.setEnabled(false);
+        jPanel1.add(btnElipse);
+
+        grupoBotonesFiguras.add(btnStrat);
+        btnStrat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/star.png"))); // NOI18N
+        btnStrat.setEnabled(false);
+        jPanel1.add(btnStrat);
+
+        grupoBotonesFiguras.add(btnParallelogram);
+        btnParallelogram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
+        btnParallelogram.setEnabled(false);
+        jPanel1.add(btnParallelogram);
+
+        grupoBotonesFiguras.add(btnEscalene);
+        btnEscalene.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
+        btnEscalene.setEnabled(false);
+        jPanel1.add(btnEscalene);
+
+        grupoBotonesFiguras.add(btnArrow);
+        btnArrow.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
+        btnArrow.setEnabled(false);
+        jPanel1.add(btnArrow);
+
+        grupoBotonesFiguras.add(btnSemiCircle);
+        btnSemiCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
+        btnSemiCircle.setEnabled(false);
+        jPanel1.add(btnSemiCircle);
+
         ToolBar.add(jPanel1);
 
         getContentPane().add(ToolBar, java.awt.BorderLayout.PAGE_START);
@@ -210,6 +344,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         jMenu1.setText("Archivo");
 
         jMenuItem2_Save2.setText("Guardar Como...");
+        jMenuItem2_Save2.setEnabled(false);
         jMenuItem2_Save2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2_Save2ActionPerformed(evt);
@@ -234,6 +369,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         grupoBotonesFiguras.add(menuItemLinea);
         menuItemLinea.setText("Linea");
         menuItemLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
+        menuItemLinea.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                menuItemLineaFocusGained(evt);
+            }
+        });
+        menuItemLinea.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuItemLineaMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                menuItemLineaMousePressed(evt);
+            }
+        });
+        menuItemLinea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemLineaActionPerformed(evt);
+            }
+        });
         jMenu2.add(menuItemLinea);
 
         grupoBotonesFiguras.add(menuItemRectangulo);
@@ -249,11 +402,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         grupoBotonesFiguras.add(menuItemCuadrado);
         menuItemCuadrado.setText("Cuadrado");
         menuItemCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
+        menuItemCuadrado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemCuadradoActionPerformed(evt);
+            }
+        });
         jMenu2.add(menuItemCuadrado);
 
         grupoBotonesFiguras.add(menuItemTrianguloRectangulo);
         menuItemTrianguloRectangulo.setText("Triangulo Rectangulo");
         menuItemTrianguloRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trianglerectangle.png"))); // NOI18N
+        menuItemTrianguloRectangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemTrianguloRectanguloActionPerformed(evt);
+            }
+        });
         jMenu2.add(menuItemTrianguloRectangulo);
 
         jMenuBar1.add(jMenu2);
@@ -263,17 +426,54 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    Color color;
-    private void BtnColorCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnColorCActionPerformed
-        JColorChooser colorP = new JColorChooser();
-        color = colorP.showDialog(null, "Selecciona un color para agregar", color.WHITE);
-        BTcolor.setBackground(color);
-    }//GEN-LAST:event_BtnColorCActionPerformed
+    private void menuItemCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemCuadradoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItemCuadradoActionPerformed
+
+    private void menuItemTrianguloRectanguloActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemTrianguloRectanguloActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItemTrianguloRectanguloActionPerformed
 
     private void jMenuItem2_Save2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2_Save2ActionPerformed
         System.out.println("Guardando...");
         savefile();
     }//GEN-LAST:event_jMenuItem2_Save2ActionPerformed
+
+    private void menuItemLineaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemLineaActionPerformed
+
+    }//GEN-LAST:event_menuItemLineaActionPerformed
+
+    private void menuItemLineaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuItemLineaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItemLineaMouseClicked
+
+    private void menuItemLineaMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_menuItemLineaMousePressed
+        // TODO add your handling code here:
+        //ventana.getBtnRectangulo().setFocusable(false);
+        //ventana.getBtnRectangulo().setFocusable(true);
+    }//GEN-LAST:event_menuItemLineaMousePressed
+
+    private void menuItemLineaFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_menuItemLineaFocusGained
+        // TODO add your handling code here:
+    }//GEN-LAST:event_menuItemLineaFocusGained
+
+    private void btnColorFondoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnColorFondoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnColorFondoActionPerformed
+
+    private void BtnGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnGActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_BtnGActionPerformed
+
+    private void BtnColorCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnColorCActionPerformed
+        JColorChooser colorP = new JColorChooser();
+        colorSeleccionado = colorP.showDialog(null, "Selecciona un color para agregar", colorSeleccionado.WHITE);
+        btnColor.setBackground(colorSeleccionado);
+    }//GEN-LAST:event_BtnColorCActionPerformed
+
+    private void btnReiniciarColoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReiniciarColoresActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnReiniciarColoresActionPerformed
 
     /**
      * @param args the command line arguments
@@ -311,33 +511,52 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JToggleButton BLACK;
-    private javax.swing.JToggleButton BLUE;
-    private javax.swing.JButton BTcolor;
     private javax.swing.JButton BtnColorC;
     private javax.swing.JButton BtnG;
-    private javax.swing.JToggleButton GREEN;
     private javax.swing.JPanel GridColors;
-    private javax.swing.JToggleButton RED;
     private javax.swing.JToolBar ToolBar;
-    private javax.swing.JToggleButton WHITE;
-    private javax.swing.JToggleButton YELLOW;
+    private javax.swing.JToggleButton btnArrow;
+    private javax.swing.JToggleButton btnBlack;
+    private javax.swing.JToggleButton btnBlue;
+    private javax.swing.JToggleButton btnCircle;
+    private javax.swing.JButton btnColor;
+    private javax.swing.JToggleButton btnColorBorde;
+    private javax.swing.JToggleButton btnColorFondo;
     private javax.swing.JToggleButton btnCuadrado;
+    private javax.swing.JToggleButton btnElipse;
+    private javax.swing.JToggleButton btnEscalene;
+    private javax.swing.JToggleButton btnGreen;
+    private javax.swing.JToggleButton btnHexagon;
     private javax.swing.JToggleButton btnLapiz;
     private javax.swing.JToggleButton btnLinea;
+    private javax.swing.JToggleButton btnParallelogram;
+    private javax.swing.JToggleButton btnPentagon;
     private javax.swing.JToggleButton btnRectangulo;
+    private javax.swing.JToggleButton btnRed;
+    private javax.swing.JToggleButton btnReiniciarColores;
     private javax.swing.JToggleButton btnRombo;
+    private javax.swing.JToggleButton btnSemiCircle;
+    private javax.swing.JToggleButton btnStrat;
+    private javax.swing.JToggleButton btnTriangle;
     private javax.swing.JToggleButton btnTrianguloRectangulo;
+    private javax.swing.JToggleButton btnWhite;
+    private javax.swing.JToggleButton btnYellow;
     private javax.swing.ButtonGroup buttonGroup1;
     private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.ButtonGroup grupoBotonesFiguras;
+    private javax.swing.ButtonGroup grupoBotonesRellenoColores;
+    private javax.swing.ButtonGroup grupoDeColores;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2_Save2;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
     private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
@@ -345,6 +564,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private javax.swing.JToolBar.Separator jSeparator2;
     private javax.swing.JToolBar.Separator jSeparator3;
     private javax.swing.JToolBar.Separator jSeparator4;
+    private javax.swing.JToolBar.Separator jSeparator5;
     private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
     private javax.swing.JRadioButtonMenuItem menuItemLapiz;
     private javax.swing.JRadioButtonMenuItem menuItemLinea;
@@ -376,34 +596,55 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JRadioButtonMenuItem getMenuItemTrianguloRectangulo() {
         return menuItemTrianguloRectangulo;
     }
-    
+
     //Metodos para accerder a los botones graficos de las figuras
-    public JToggleButton getBtnRectangulo(){
+    public JToggleButton getBtnRectangulo() {
         return btnRectangulo;
     }
-    
-    public JToggleButton getBtnLinea(){
+
+    public JToggleButton getBtnLinea() {
         return btnLinea;
     }
-    
-    public JToggleButton getBtnCuadrado(){
-     return btnCuadrado;
+
+    public JToggleButton getBtnCuadrado() {
+        return btnCuadrado;
     }
-    
-    public JToggleButton getBtnTrianguloRectangulo(){
-     return btnTrianguloRectangulo;
+
+    public JToggleButton getBtnTrianguloRectangulo() {
+        return btnTrianguloRectangulo;
     }
-    
-    public JToggleButton getBtnRombo(){
-     return btnRombo;
+
+    public JToggleButton getBtnRombo() {
+        return btnRombo;
     }
-    
-    public JToggleButton getBtnLapiz(){
-     return btnLapiz;
+
+    public JToggleButton getBtnLapiz() {
+        return btnLapiz;
     }
-    
-    
-    
+
+    public JToggleButton getBtnGreen() {
+        return btnGreen;
+    }
+
+    public ButtonGroup getGrupoDeColores() {
+        return grupoDeColores;
+    }
+
+    public JToggleButton getBtnColorBorde() {
+        return btnColorBorde;
+    }
+
+    public JToggleButton getBtnColorFondo() {
+        return btnColorFondo;
+    }
+
+    public ButtonGroup getGrupoBotonesRellenoColores() {
+        return grupoBotonesRellenoColores;
+    }
+
+    public JToggleButton getBtnReiniciarColores() {
+        return btnReiniciarColores;
+    }
 
 //Guardar Como
     public void savefile() {

@@ -24,10 +24,9 @@ public class Rombo extends Rectangulo {
         int[] puntosY = new int[]{punto1.y, punto2.y, punto3.y, punto4.y};
 
         //TODO DEFINIR COMO SELECCIONAR EL COLOR DE PRIMER PLANO Y SEGUNDO PLANO
-        g.setColor(Color.yellow);
-        g.fillPolygon( puntosX, puntosY, 4);
-        g.setColor(Color.red);
-        g.drawPolygon( puntosX, puntosY, 4);
+        //g.fillPolygon( puntosX, puntosY, 4);
+        g.setColor(getColor());
+        g.drawPolygon(puntosX, puntosY, 4);
     }
 
 }
