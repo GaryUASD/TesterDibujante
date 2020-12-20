@@ -98,6 +98,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
     grupoDeColores = new javax.swing.ButtonGroup();
     grupoBotonesRellenoColores = new javax.swing.ButtonGroup();
+    jMenuItem2 = new javax.swing.JMenuItem();
     ToolBar = new javax.swing.JToolBar();
     BtnG = new javax.swing.JButton();
     jSeparator2 = new javax.swing.JToolBar.Separator();
@@ -150,6 +151,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     menuItemRombo = new javax.swing.JRadioButtonMenuItem();
     menuItemCuadrado = new javax.swing.JRadioButtonMenuItem();
     menuItemTrianguloRectangulo = new javax.swing.JRadioButtonMenuItem();
+    menuItemCubeta = new javax.swing.JRadioButtonMenuItem();
 
     jRadioButtonMenuItem1.setSelected(true);
     jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -159,6 +161,8 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     jRadioButtonMenuItem3.setSelected(true);
     jRadioButtonMenuItem3.setText("jRadioButtonMenuItem3");
+
+    jMenuItem2.setText("jMenuItem2");
 
     setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -440,6 +444,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     });
     jMenu2.add(menuItemTrianguloRectangulo);
 
+    grupoBotonesFiguras.add(menuItemCubeta);
+    menuItemCubeta.setSelected(true);
+    menuItemCubeta.setText("Cubeta");
+    jMenu2.add(menuItemCubeta);
+
     jMenuBar1.add(jMenu2);
 
     setJMenuBar(jMenuBar1);
@@ -580,6 +589,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JMenu jMenu2;
   private javax.swing.JMenuBar jMenuBar1;
   private javax.swing.JMenuItem jMenuItem1;
+  private javax.swing.JMenuItem jMenuItem2;
   private javax.swing.JMenuItem jMenuItem2_Save2;
   private javax.swing.JPanel jPanel1;
   private javax.swing.JPanel jPanel2;
@@ -592,6 +602,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JToolBar.Separator jSeparator4;
   private javax.swing.JToolBar.Separator jSeparator5;
   private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
+  private javax.swing.JRadioButtonMenuItem menuItemCubeta;
   private javax.swing.JRadioButtonMenuItem menuItemLapiz;
   private javax.swing.JRadioButtonMenuItem menuItemLinea;
   private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
@@ -691,5 +702,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
       // TODO: handle exception
       ox.printStackTrace();
     }
+  }
+
+  public javax.swing.JRadioButtonMenuItem getMenuItemCubeta() {
+    return menuItemCubeta;
   }
 }
