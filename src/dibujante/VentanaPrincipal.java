@@ -152,6 +152,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     menuItemCuadrado = new javax.swing.JRadioButtonMenuItem();
     menuItemTrianguloRectangulo = new javax.swing.JRadioButtonMenuItem();
     menuItemCubeta = new javax.swing.JRadioButtonMenuItem();
+    menuItemTriangulo = new javax.swing.JRadioButtonMenuItem();
 
     jRadioButtonMenuItem1.setSelected(true);
     jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -324,7 +325,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     grupoBotonesFiguras.add(btnTriangle);
     btnTriangle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
-    btnTriangle.setEnabled(false);
     jPanel1.add(btnTriangle);
 
     grupoBotonesFiguras.add(btnCircle);
@@ -445,9 +445,12 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     jMenu2.add(menuItemTrianguloRectangulo);
 
     grupoBotonesFiguras.add(menuItemCubeta);
-    menuItemCubeta.setSelected(true);
     menuItemCubeta.setText("Cubeta");
     jMenu2.add(menuItemCubeta);
+
+    grupoBotonesFiguras.add(menuItemTriangulo);
+    menuItemTriangulo.setText("Triangulo");
+    jMenu2.add(menuItemTriangulo);
 
     jMenuBar1.add(jMenu2);
 
@@ -607,6 +610,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JRadioButtonMenuItem menuItemLinea;
   private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
   private javax.swing.JRadioButtonMenuItem menuItemRombo;
+  private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
   private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
   // End of variables declaration//GEN-END:variables
 
@@ -682,6 +686,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   public JButton getBtnRestablecerColores() {
     return btnRestablecerColores;
   }
+  
+   public JToggleButton getBtnTriangle() {
+    return btnTriangle;
+  }
 
 //Guardar Como
   public void savefile() {
@@ -707,4 +715,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   public javax.swing.JRadioButtonMenuItem getMenuItemCubeta() {
     return menuItemCubeta;
   }
+  
+   public javax.swing.JRadioButtonMenuItem getMenuItemTriangulo() {
+    return menuItemTriangulo;
+  }
+  
 }
