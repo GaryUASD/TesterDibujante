@@ -5,12 +5,7 @@
  */
 package dibujante;
 
-import figuras.DibujoLibre;
-import figuras.Figura;
-import figuras.Linea;
-import figuras.Rectangulo;
-import figuras.Rombo;
-import figuras.TrianguloRectangulo;
+import figuras.*;
 import java.awt.BorderLayout;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -445,7 +440,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     jMenu2.add(menuItemTrianguloRectangulo);
 
     grupoBotonesFiguras.add(menuItemCubeta);
-    menuItemCubeta.setSelected(true);
     menuItemCubeta.setText("Cubeta");
     jMenu2.add(menuItemCubeta);
 
