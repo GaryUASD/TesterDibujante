@@ -13,7 +13,6 @@ import java.awt.event.MouseEvent;
  */
 public class TrianguloRectangulo extends Rectangulo {
 
-    VentanaPrincipal ventana = new VentanaPrincipal();
     Color colorFondo;
     Color colorBorde;
 

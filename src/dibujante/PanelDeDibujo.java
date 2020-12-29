@@ -46,7 +46,7 @@ public class PanelDeDibujo extends JPanel {
         } else if (ventana.getMenuItemRectangulo().isSelected()) {
           figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemRombo().isSelected()) {
-          figuraActual = new Rombo(evento.getPoint());
+          figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemCuadrado().isSelected()) {
           figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemTrianguloRectangulo().isSelected()) {
@@ -67,7 +67,7 @@ public class PanelDeDibujo extends JPanel {
         } else if (ventana.getBtnTrianguloRectangulo().isSelected()) {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnRombo().isSelected()) {
-          figuraActual = new Rombo(evento.getPoint());
+          figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnLapiz().isSelected()) {
           figuraActual = new DibujoLibre(evento.getPoint());
         }

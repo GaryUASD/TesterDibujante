@@ -10,9 +10,15 @@ import java.awt.Point;
  */
 public class Rombo extends Rectangulo {
 
-    public Rombo(Point ubicacion) {
+    Color colorFondo;
+    Color colorBorde;
+    
+    public Rombo(Point ubicacion, Color colorBorde, Color colorFondo) {
         super(ubicacion);
+        this.colorFondo = colorFondo;
+        this.colorBorde = colorBorde;
     }
+    
 
     @Override
     public void dibujar(Graphics g) {
@@ -25,7 +31,11 @@ public class Rombo extends Rectangulo {
 
         //TODO DEFINIR COMO SELECCIONAR EL COLOR DE PRIMER PLANO Y SEGUNDO PLANO
         //g.fillPolygon( puntosX, puntosY, 4);
-        g.setColor(getColor());
+
+        
+        g.setColor(this.colorFondo);
+        g.fillPolygon( puntosX, puntosY, 4);
+        g.setColor(this.colorBorde);
         g.drawPolygon(puntosX, puntosY, 4);
     }
 
