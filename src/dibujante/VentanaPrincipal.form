@@ -166,6 +166,19 @@
                 <Property name="text" type="java.lang.String" value="Kite"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Triangulo Escaleno"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemTrianguloEscalenoActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemFlecha">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Flecha"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>
@@ -567,10 +580,9 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/scalene.png"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
-            <Component class="javax.swing.JToggleButton" name="btnArrow">
+            <Component class="javax.swing.JToggleButton" name="btnFlecha">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
@@ -578,7 +590,6 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/arrow.png"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnSemiCircle">

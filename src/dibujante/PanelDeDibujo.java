@@ -56,6 +56,13 @@ public class PanelDeDibujo extends JPanel {
          } 
         else if(ventana.getBtnKite().isSelected()) {
            figuraActual = new Kite(evento.getPoint(), colorDeBorde, colorDeFondo);
+        } 
+        else if (ventana.getMenuItemFlecha().isSelected()) {
+            figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
+        } 
+        else if (ventana.MenuItemTrianguloEscaleno().isSelected()) {
+            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
+            
         }else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
@@ -75,7 +82,12 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else if (ventana.getBtnLapiz().isSelected()) {
           figuraActual = new DibujoLibre(evento.getPoint());
-        }
+        } else if (ventana.getbtnEscalene().isSelected()) {
+           figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
+        } else if (ventana.getBtnFlecha().isSelected()) {
+           figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
+                }
+
 
         figuraActual.setColor(colorDeBorde);
         figuras.add(figuraActual);
