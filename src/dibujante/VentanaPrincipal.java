@@ -150,7 +150,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     btnKite = new javax.swing.JRadioButtonMenuItem();
     MenuItemTrianguloEscaleno = new javax.swing.JRadioButtonMenuItem();
     MenuItemFlecha = new javax.swing.JRadioButtonMenuItem();
-    MenuItemParalelogramo = new javax.swing.JRadioButtonMenuItem();
 
     jRadioButtonMenuItem1.setSelected(true);
     jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -340,11 +339,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     btnStrat.setEnabled(false);
     jPanel1.add(btnStrat);
 
-    grupoBotonesFiguras.add(btnParallelogram);
-    btnParallelogram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
-    btnParallelogram.setEnabled(false);
-    jPanel1.add(btnParallelogram);
-
     grupoBotonesFiguras.add(btnEscalene);
     btnEscalene.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
     jPanel1.add(btnEscalene);
@@ -420,11 +414,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     menuItemRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
     jMenu2.add(menuItemRombo);
       
-    grupoBotonesFiguras.add(menuItemParalelogramo);
-    menuItemParalelogramo.setText("Paralelogramo");
-    menuItemParalelogramo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
-    jMenu2.add(menuItemParalelogramo);
-
     grupoBotonesFiguras.add(menuItemCuadrado);
     menuItemCuadrado.setText("Cuadrado");
     menuItemCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
@@ -637,7 +626,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JRadioButtonMenuItem menuItemRombo;
   private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
   private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
-  private javax.swing.JRadioButtonMenuItem menuItemParalelogramo;
   // End of variables declaration//GEN-END:variables
 
     public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
@@ -670,10 +658,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     public javax.swing.JRadioButtonMenuItem getMenuItemFlecha() {
         return MenuItemFlecha;
-    }
-    
-    public javax.swing.JRadioButtonMenuItem getMenuItemParalelogramo() {
-        return menuItemParalelogramo;
     }
 
     //Metodos para accerder a los botones graficos de las figuras
