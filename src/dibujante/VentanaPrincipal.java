@@ -150,6 +150,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     btnKite = new javax.swing.JRadioButtonMenuItem();
     MenuItemTrianguloEscaleno = new javax.swing.JRadioButtonMenuItem();
     MenuItemFlecha = new javax.swing.JRadioButtonMenuItem();
+    menuItemSemiCirculo = new javax.swing.JRadioButtonMenuItem();
+    menuitemCrescent = new javax.swing.JRadioButtonMenuItem();
+    menuItemAnillo = new javax.swing.JRadioButtonMenuItem();
 
     jRadioButtonMenuItem1.setSelected(true);
     jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -351,6 +354,21 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     btnSemiCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
     btnSemiCircle.setEnabled(false);
     jPanel1.add(btnSemiCircle);
+    grupoBotonesFiguras.add(btnCrescent);
+    btnCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
+    btnCrescent.setToolTipText("Media Luna");
+    btnCrescent.addActionListener(new java.awt.event.ActionListener() {
+    public void actionPerformed(java.awt.event.ActionEvent evt) {
+            btnCrescentActionPerformed(evt);
+         }
+      });
+      jPanel1.add(btnCrescent);
+
+      grupoBotonesFiguras.add(btnAnillo);
+      btnAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
+      jPanel1.add(btnAnillo);
+
+    
 
     ToolBar.add(jPanel1);
 
@@ -460,6 +478,24 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     MenuItemFlecha.setText("Flecha");
     MenuItemFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
     jMenu2.add(MenuItemFlecha);
+     
+     grupoBotonesFiguras.add(menuItemSemiCirculo);
+      menuItemSemiCirculo.setText("SemiCirculo");
+      menuItemSemiCirculo.setToolTipText("SemiCirculo");
+      menuItemSemiCirculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
+      jMenu2.add(menuItemSemiCirculo);
+
+      grupoBotonesFiguras.add(menuitemCrescent);
+      menuitemCrescent.setText("crescent");
+      menuitemCrescent.setToolTipText("Media Luna");
+      menuitemCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
+      jMenu2.add(menuitemCrescent);
+
+      grupoBotonesFiguras.add(menuItemAnillo);
+      menuItemAnillo.setText("Anillo");
+      menuItemAnillo.setToolTipText("Anillo");
+      menuItemAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
+      jMenu2.add(menuItemAnillo);
 
     jMenuBar1.add(jMenu2);
 
@@ -467,6 +503,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     pack();
   }// </editor-fold>//GEN-END:initComponents
+
 
     private void menuItemCuadradoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_menuItemCuadradoActionPerformed
         // TODO add your handling code here:
@@ -527,7 +564,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void MenuItemTrianguloEscalenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemTrianguloEscalenoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MenuItemTrianguloEscalenoActionPerformed
-  
+
+
+   private void btnCrescentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCrescentActionPerformed
+      // TODO add your handling code here:
+   }//GEN-LAST:event_btnCrescentActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -560,73 +606,80 @@ public class VentanaPrincipal extends javax.swing.JFrame {
             }
         });
     }
+  
 
-  // Variables declaration - do not modify//GEN-BEGIN:variables
-  private javax.swing.JButton BtnColorC;
-  private javax.swing.JButton BtnG;
-  private javax.swing.JPanel GridColors;
-  private javax.swing.JRadioButtonMenuItem MenuItemFlecha;
-  private javax.swing.JRadioButtonMenuItem MenuItemTrianguloEscaleno;
-  private javax.swing.JToolBar ToolBar;
-  private javax.swing.JToggleButton btnBlack;
-  private javax.swing.JToggleButton btnBlue;
-  private javax.swing.JToggleButton btnCircle;
-  private javax.swing.JButton btnColor;
-  private javax.swing.JToggleButton btnColorBorde;
-  private javax.swing.JToggleButton btnColorFondo;
-  private javax.swing.JToggleButton btnCuadrado;
-  private javax.swing.JToggleButton btnElipse;
-  private javax.swing.JToggleButton btnEscalene;
-  private javax.swing.JToggleButton btnFlecha;
-  private javax.swing.JToggleButton btnGreen;
-  private javax.swing.JToggleButton btnHexagon;
-  private javax.swing.JRadioButtonMenuItem btnKite;
-  private javax.swing.JToggleButton btnLapiz;
-  private javax.swing.JToggleButton btnLinea;
-  private javax.swing.JToggleButton btnParallelogram;
-  private javax.swing.JToggleButton btnPentagon;
-  private javax.swing.JToggleButton btnRectangulo;
-  private javax.swing.JToggleButton btnRed;
-  private javax.swing.JButton btnRestablecerColores;
-  private javax.swing.JToggleButton btnRombo;
-  private javax.swing.JToggleButton btnSemiCircle;
-  private javax.swing.JToggleButton btnStrat;
-  private javax.swing.JToggleButton btnTriangle;
-  private javax.swing.JToggleButton btnTrianguloRectangulo;
-  private javax.swing.JToggleButton btnWhite;
-  private javax.swing.JToggleButton btnYellow;
-  private javax.swing.ButtonGroup grupoBotonesFiguras;
-  private javax.swing.ButtonGroup grupoBotonesRellenoColores;
-  private javax.swing.ButtonGroup grupoDeColores;
-  private javax.swing.JLabel jLabel1;
-  private javax.swing.JLabel jLabel2;
-  private javax.swing.JLabel jLabel3;
-  private javax.swing.JLabel jLabel4;
-  private javax.swing.JMenu jMenu1;
-  private javax.swing.JMenu jMenu2;
-  private javax.swing.JMenuBar jMenuBar1;
-  private javax.swing.JMenuItem jMenuItem1;
-  private javax.swing.JMenuItem jMenuItem2;
-  private javax.swing.JMenuItem jMenuItem2_Save2;
-  private javax.swing.JPanel jPanel1;
-  private javax.swing.JPanel jPanel2;
-  private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-  private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
-  private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
-  private javax.swing.JPopupMenu.Separator jSeparator1;
-  private javax.swing.JToolBar.Separator jSeparator2;
-  private javax.swing.JToolBar.Separator jSeparator3;
-  private javax.swing.JToolBar.Separator jSeparator4;
-  private javax.swing.JToolBar.Separator jSeparator5;
-  private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
-  private javax.swing.JRadioButtonMenuItem menuItemCubeta;
-  private javax.swing.JRadioButtonMenuItem menuItemLapiz;
-  private javax.swing.JRadioButtonMenuItem menuItemLinea;
-  private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
-  private javax.swing.JRadioButtonMenuItem menuItemRombo;
-  private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
-  private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
-  // End of variables declaration//GEN-END:variables
+   // Variables declaration - do not modify//GEN-BEGIN:variables
+   private javax.swing.JButton BtnColorC;
+   private javax.swing.JButton BtnG;
+   private javax.swing.JPanel GridColors;
+   private javax.swing.JRadioButtonMenuItem MenuItemFlecha;
+   private javax.swing.JRadioButtonMenuItem MenuItemTrianguloEscaleno;
+   private javax.swing.JToolBar ToolBar;
+   private javax.swing.JToggleButton btnAnillo;
+   private javax.swing.JToggleButton btnBlack;
+   private javax.swing.JToggleButton btnBlue;
+   private javax.swing.JToggleButton btnCircle;
+   private javax.swing.JButton btnColor;
+   private javax.swing.JToggleButton btnColorBorde;
+   private javax.swing.JToggleButton btnColorFondo;
+   private javax.swing.JToggleButton btnCrescent;
+   private javax.swing.JToggleButton btnCuadrado;
+   private javax.swing.JToggleButton btnElipse;
+   private javax.swing.JToggleButton btnEscalene;
+   private javax.swing.JToggleButton btnFlecha;
+   private javax.swing.JToggleButton btnGreen;
+   private javax.swing.JToggleButton btnHexagon;
+   private javax.swing.JRadioButtonMenuItem btnKite;
+   private javax.swing.JToggleButton btnLapiz;
+   private javax.swing.JToggleButton btnLinea;
+   private javax.swing.JToggleButton btnParallelogram;
+   private javax.swing.JToggleButton btnPentagon;
+   private javax.swing.JToggleButton btnRectangulo;
+   private javax.swing.JToggleButton btnRed;
+   private javax.swing.JButton btnRestablecerColores;
+   private javax.swing.JToggleButton btnRombo;
+   private javax.swing.JToggleButton btnSemiCircle;
+   private javax.swing.JToggleButton btnStrat;
+   private javax.swing.JToggleButton btnTriangle;
+   private javax.swing.JToggleButton btnTrianguloRectangulo;
+   private javax.swing.JToggleButton btnWhite;
+   private javax.swing.JToggleButton btnYellow;
+   private javax.swing.ButtonGroup grupoBotonesFiguras;
+   private javax.swing.ButtonGroup grupoBotonesRellenoColores;
+   private javax.swing.ButtonGroup grupoDeColores;
+   private javax.swing.JLabel jLabel1;
+   private javax.swing.JLabel jLabel2;
+   private javax.swing.JLabel jLabel3;
+   private javax.swing.JLabel jLabel4;
+   private javax.swing.JMenu jMenu1;
+   private javax.swing.JMenu jMenu2;
+   private javax.swing.JMenuBar jMenuBar1;
+   private javax.swing.JMenuItem jMenuItem1;
+   private javax.swing.JMenuItem jMenuItem2;
+   private javax.swing.JMenuItem jMenuItem2_Save2;
+   private javax.swing.JPanel jPanel1;
+   private javax.swing.JPanel jPanel2;
+   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
+   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
+   private javax.swing.JPopupMenu.Separator jSeparator1;
+   private javax.swing.JToolBar.Separator jSeparator2;
+   private javax.swing.JToolBar.Separator jSeparator3;
+   private javax.swing.JToolBar.Separator jSeparator4;
+   private javax.swing.JToolBar.Separator jSeparator5;
+   private javax.swing.JRadioButtonMenuItem menuItemAnillo;
+   private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
+   private javax.swing.JRadioButtonMenuItem menuItemCubeta;
+   private javax.swing.JRadioButtonMenuItem menuItemLapiz;
+   private javax.swing.JRadioButtonMenuItem menuItemLinea;
+   private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
+   private javax.swing.JRadioButtonMenuItem menuItemRombo;
+   private javax.swing.JRadioButtonMenuItem menuItemSemiCirculo;
+   private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
+   private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
+   private javax.swing.JRadioButtonMenuItem menuitemCrescent;
+   // End of variables declaration//GEN-END:variables
+
 
     public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
         return menuItemLapiz;
@@ -660,6 +713,16 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         return MenuItemFlecha;
     }
 
+    public javax.swing.JRadioButtonMenuItem getMenuItemSemiCirculo() {
+        return menuItemSemiCirculo;
+    }   
+    
+   public javax.swing.JRadioButtonMenuItem getMenuitemCrescent() {
+      return menuitemCrescent;
+   }
+    public javax.swing.JRadioButtonMenuItem getMenuitemAnillo() {
+      return menuItemAnillo;
+   }
     //Metodos para accerder a los botones graficos de las figuras
     public JToggleButton getBtnRectangulo() {
         return btnRectangulo;
@@ -724,7 +787,19 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public JRadioButtonMenuItem getBtnKite() {
         return btnKite;
     }
-
+    
+   public javax.swing.JToggleButton getBtnCrescent() {
+      return btnCrescent;
+   }
+   
+    public javax.swing.JToggleButton getBtnSemiCircle() {
+        return btnSemiCircle;
+    }
+    
+    public javax.swing.JToggleButton getBtnAnillo() {
+        return btnAnillo;
+    }
+    
 //Guardar Como
     public void savefile() {
         BufferedImage image2 = new BufferedImage(PanelDeDibujo.WIDTH, PanelDeDibujo.HEIGHT, BufferedImage.TYPE_INT_RGB);
