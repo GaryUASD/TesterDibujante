@@ -191,12 +191,9 @@
                 </Property>
               </Properties>
             </MenuItem>
+              <Properties>
                 <Property name="text" type="java.lang.String" value="Paralelogramo"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemParalelogramoActionPerformed"/>
-              </Events>
-            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>
