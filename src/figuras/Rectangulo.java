@@ -46,6 +46,7 @@ public class Rectangulo extends Figura{
   @Override
   public void dibujar(Graphics g) {
     if (esCuadrado) {//Metodo del cuadrado
+        
 
       int x = ubicacion.x + ((anchura < 0) ? this.anchura : 0);
       int y = ubicacion.y + ((anchura < 0) ? this.anchura : 0);
