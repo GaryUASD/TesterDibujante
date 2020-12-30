@@ -37,10 +37,12 @@ public class Paralelogramo extends Rectangulo{
       int[] puntosY = new int[]{punto1.y, punto2.y, punto3.y, punto4.y};
 
       //Metodos para dibujar los bordes y el relleno del poligono
-      setColor(colorDeFondo);
-      g.fillPolygon(puntosY, puntosY, 4);
-      setColor(colorDeBorde);
+     
+      g.setColor(this.colorDeFondo);
+      g.fillPolygon(puntosX, puntosY, 4);
+      g.setColor(this.colorDeBorde);
       g.drawPolygon( puntosX, puntosY, 4);
+      
     }
     
 }
