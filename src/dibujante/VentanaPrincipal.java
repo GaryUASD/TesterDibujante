@@ -150,6 +150,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     btnKite = new javax.swing.JRadioButtonMenuItem();
     MenuItemTrianguloEscaleno = new javax.swing.JRadioButtonMenuItem();
     MenuItemFlecha = new javax.swing.JRadioButtonMenuItem();
+    MenuItemParalelogramo = new javax.swing.JRadioButtonMenuItem();
 
     jRadioButtonMenuItem1.setSelected(true);
     jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
@@ -642,10 +643,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
         return menuItemLapiz;
     }
-    
-     public javax.swing.JRadioButtonMenuItem getMenuItemParalelogramo() {
-        return menuItemLapiz;
-    }
 
     public javax.swing.JRadioButtonMenuItem getMenuItemLinea() {
         return menuItemLinea;
@@ -673,6 +670,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     public javax.swing.JRadioButtonMenuItem getMenuItemFlecha() {
         return MenuItemFlecha;
+    }
+    
+    public javax.swing.JRadioButtonMenuItem getMenuItemParalelogramo() {
+        return menuItemParalelogramo;
     }
 
     //Metodos para accerder a los botones graficos de las figuras
