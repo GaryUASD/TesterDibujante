@@ -37,8 +37,8 @@ public class PanelDeDibujo extends JPanel {
         //Condicionales para detectar cual es la figura seleccionada a dibujar  apartir de los menuItem
         if (ventana.getMenuItemLinea().isSelected()) {
           figuraActual = new Linea(evento.getPoint(), evento.getPoint(), colorDeBorde);
-        } else if (ventana.getMenuItemRectangulo().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
+        }else if (ventana.getMenuItemRectangulo().isSelected()) {
+         figuraActual = new Rectangulo(evento.getPoint(),false,colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemRombo().isSelected()) {
           figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemTrianguloRectangulo().isSelected()) {

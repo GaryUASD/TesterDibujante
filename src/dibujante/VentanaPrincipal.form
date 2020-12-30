@@ -148,6 +148,9 @@
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Cubeta"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/FillWithColor.png"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemTriangulo">
@@ -156,6 +159,9 @@
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Triangulo"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/triangle.png"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="btnKite">
@@ -169,6 +175,9 @@
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Triangulo Escaleno"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/scalene.png"/>
+                </Property>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="MenuItemTrianguloEscalenoActionPerformed"/>
@@ -177,6 +186,9 @@
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemFlecha">
               <Properties>
                 <Property name="text" type="java.lang.String" value="Flecha"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/arrow.png"/>
+                </Property>
               </Properties>
             </MenuItem>
           </SubComponents>
