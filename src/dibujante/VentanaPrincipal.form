@@ -150,6 +150,14 @@
                 <Property name="text" type="java.lang.String" value="Cubeta"/>
               </Properties>
             </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemTriangulo">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Triangulo"/>
+              </Properties>
+            </MenuItem>
           </SubComponents>
         </Menu>
       </SubComponents>
@@ -497,7 +505,6 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/triangle.png"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnCircle">

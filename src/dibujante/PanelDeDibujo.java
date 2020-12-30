@@ -1,12 +1,6 @@
 package dibujante;
 
-import figuras.Cubeta;
-import figuras.DibujoLibre;
-import figuras.Figura;
-import figuras.Linea;
-import figuras.Rectangulo;
-import figuras.Rombo;
-import figuras.TrianguloRectangulo;
+import figuras.*;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.event.ActionListener;
@@ -53,8 +47,13 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemCubeta().isSelected()) {
           figuraActual = new Cubeta(evento.getPoint(), colorDeBorde, PanelDeDibujo.this);
+
         } else  if (ventana.getMenuItemCuadrado().isSelected()) {
           figuraActual = new Rectangulo(evento.getPoint(),true,colorDeBorde, colorDeFondo);//Cuadrado
+
+        } else if(ventana.getMenuItemTriangulo().isSelected()) {
+           figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
+
         }else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
@@ -70,7 +69,9 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnRombo().isSelected()) {
           figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
-        } else if (ventana.getBtnLapiz().isSelected()) {
+        } else if (ventana.getBtnTriangle().isSelected()) {
+          figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
+        }else if (ventana.getBtnLapiz().isSelected()) {
           figuraActual = new DibujoLibre(evento.getPoint());
         }
 
