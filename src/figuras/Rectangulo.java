@@ -9,7 +9,7 @@ import java.awt.Graphics;
  * @author josearielpereyra
  * @author Octa
  */
-public class Rectangulo extends Figura {
+public class Rectangulo extends Figura{
 
   Point ubicacion; 
   int anchura;

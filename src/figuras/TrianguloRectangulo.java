@@ -46,9 +46,9 @@ public class TrianguloRectangulo extends Rectangulo {
 
         //TODO DEFINIR COMO SELECCIONAR EL COLOR DE PRIMER PLANO Y SEGUNDO PLANO
         g.setColor(this.colorFondo);
-        g.fillPolygon(puntosX, puntosY, 3);
+        g.fillPolygon( puntosX, puntosY, 3);
         g.setColor(this.colorBorde);
         g.drawPolygon(puntosX, puntosY, 3);
-
+        
     }
 }

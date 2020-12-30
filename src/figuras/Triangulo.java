@@ -1,4 +1,3 @@
-
   /*
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
  *
@@ -6,14 +5,15 @@
  *
  * Contributor(s):Octani T
  */
-
 package figuras;
 
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 
- /* @author Octa
+/**
+ *
+ * @author Octa
  */
 public class Triangulo extends Rectangulo {
  Color colorFondo;
@@ -45,5 +45,4 @@ public class Triangulo extends Rectangulo {
         g.setColor(this.colorBorde);
         g.drawPolygon(puntosX, puntosY, 3);
   }
-
 }
