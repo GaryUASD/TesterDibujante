@@ -467,15 +467,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     jMenu2.add(MenuItemFlecha);
 
     jMenuBar1.add(jMenu2);
-    
-        grupoBotonesFiguras.add(menuItemParalelogramo);
-        menuItemParalelogramo.setText("Paralelogramo");
-        menuItemParalelogramo.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuItemParalelogramoActionPerformed(evt);
-            }
-        });
-        jMenu2.add(menuItemParalelogramo);
 
     setJMenuBar(jMenuBar1);
 
