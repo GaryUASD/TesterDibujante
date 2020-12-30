@@ -41,16 +41,12 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemRombo().isSelected()) {
           figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
-        } else if (ventana.getMenuItemCuadrado().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemTrianguloRectangulo().isSelected()) {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemCubeta().isSelected()) {
           figuraActual = new Cubeta(evento.getPoint(), colorDeBorde, PanelDeDibujo.this);
-
         } else  if (ventana.getMenuItemCuadrado().isSelected()) {
           figuraActual = new Rectangulo(evento.getPoint(),true,colorDeBorde, colorDeFondo);//Cuadrado
-
         } else if(ventana.getMenuItemTriangulo().isSelected()) {
            figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
          } 
