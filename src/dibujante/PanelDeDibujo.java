@@ -48,7 +48,7 @@ class PanelDeDibujo extends JPanel {
            figuraActual = new TrianguloRectangulo(evento.getPoint());
          }
          else if(ventana.getMenuItemParalelogramo().isSelected() ){
-           figuraActual = new Paralelogramo(evento.getPoint());
+           figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, ColorDeFondo);
          }
          else{
           figuraActual = new DibujoLibre( evento.getPoint() );

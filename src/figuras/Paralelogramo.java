@@ -1,6 +1,7 @@
 
 package figuras;
 
+import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
 
@@ -11,8 +12,13 @@ import java.awt.Point;
 
 public class Paralelogramo extends Rectangulo{
     
-    public Paralelogramo(Point ubicacion) {
+    Color colorDeBorde;
+    Color colorDeFondo;
+    
+    public Paralelogramo(Point ubicacion, Color colorDeBorde, Color colorDeFondo) {
         super(ubicacion);
+        this.colorDeBorde = colorDeBorde;
+        this.colorDeFondo = colorDeFondo;
     }
     
     @Override
@@ -30,7 +36,10 @@ public class Paralelogramo extends Rectangulo{
       int[] puntosX = new int[]{punto1.x, punto2.x, punto3.x, punto4.x};
       int[] puntosY = new int[]{punto1.y, punto2.y, punto3.y, punto4.y};
 
-      //Metodo para dibujar el poligono
+      //Metodos para dibujar los bordes y el relleno del poligono
+      setColor(colorDeFondo);
+      g.fillPolygon(puntosY, puntosY, 4);
+      setColor(colorDeBorde);
       g.drawPolygon( puntosX, puntosY, 4);
     }
     
