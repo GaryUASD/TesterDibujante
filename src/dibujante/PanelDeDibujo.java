@@ -60,7 +60,7 @@ public class PanelDeDibujo extends JPanel {
         else if (ventana.MenuItemTrianguloEscaleno().isSelected()) {
             figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);   
         } else if(ventana.getMenuItemParalelogramo().isSelected() ){
-           figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, ColorDeFondo);
+           figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, colorDeFondo);
          } else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
