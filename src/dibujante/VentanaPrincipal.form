@@ -150,65 +150,19 @@
                 <Property name="text" type="java.lang.String" value="Cubeta"/>
               </Properties>
             </MenuItem>
-
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemRombo1">
-
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemTriangulo">
-
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
-
-                <Property name="text" type="java.lang.String" value="Rombo"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemCuadrado1">
-              <Properties>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="grupoBotonesFiguras"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Cuadrado"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemCuadradoActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTriangulo">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Triangulo"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemTrianguloRectangulo1">
-              <Properties>
-                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
-                  <ComponentRef name="grupoBotonesFiguras"/>
-                </Property>
-                <Property name="text" type="java.lang.String" value="Triangulo Rectangulo"/>
-              </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemTrianguloRectanguloActionPerformed"/>
-              </Events>
-            </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Triangulo Escaleno"/>
-              </Properties>
-            </MenuItem>
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemFlecha">
-
                 <Property name="text" type="java.lang.String" value="Triangulo"/>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="btnKite">
-
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
-
-                <Property name="text" type="java.lang.String" value="Flecha"/>
-
                 <Property name="text" type="java.lang.String" value="Kite"/>
               </Properties>
             </MenuItem>
@@ -518,9 +472,6 @@
                   <Image iconType="3" name="/icons/square.png"/>
                 </Property>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnCuadradoActionPerformed"/>
-              </Events>
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnLinea">
               <Properties>
@@ -616,12 +567,10 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/scalene.png"/>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
-              <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnEscaleneActionPerformed"/>
-              </Events>
             </Component>
-            <Component class="javax.swing.JToggleButton" name="btnFlecha">
+            <Component class="javax.swing.JToggleButton" name="btnArrow">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
@@ -629,6 +578,7 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/arrow.png"/>
                 </Property>
+                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnSemiCircle">
