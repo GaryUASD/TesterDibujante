@@ -53,7 +53,9 @@ public class PanelDeDibujo extends JPanel {
 
         } else if(ventana.getMenuItemTriangulo().isSelected()) {
            figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
-
+         } 
+        else if(ventana.getBtnKite().isSelected()) {
+           figuraActual = new Kite(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
