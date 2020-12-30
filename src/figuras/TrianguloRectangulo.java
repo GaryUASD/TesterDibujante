@@ -3,6 +3,9 @@ package figuras;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Point;
+import dibujante.VentanaPrincipal;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 /**
  *
@@ -10,8 +13,14 @@ import java.awt.Point;
  */
 public class TrianguloRectangulo extends Rectangulo {
 
-    public TrianguloRectangulo(Point ubicacion) {
+    Color colorFondo;
+    Color colorBorde;
+
+    public TrianguloRectangulo(Point ubicacion, Color colorBorde, Color colorFondo) {
         super(ubicacion);
+        //setColor(colorBorde);
+        this.colorFondo = colorFondo;
+        this.colorBorde = colorBorde;
     }
 
     @Override
@@ -36,10 +45,10 @@ public class TrianguloRectangulo extends Rectangulo {
         int[] puntosY = new int[]{punto1.y, punto2.y, punto3.y};
 
         //TODO DEFINIR COMO SELECCIONAR EL COLOR DE PRIMER PLANO Y SEGUNDO PLANO
-        //g.setColor(Color.yellow);
-        //g.fillPolygon( puntosX, puntosY, 3);
-        //g.setColor(Color.red);
+        g.setColor(this.colorFondo);
+        g.fillPolygon( puntosX, puntosY, 3);
+        g.setColor(this.colorBorde);
         g.drawPolygon(puntosX, puntosY, 3);
-
+        
     }
 }

@@ -9,7 +9,7 @@ import java.awt.Point;
  * @author josearielpereyra
  */
 public abstract class Figura {
-  private Color color;
+  Color color;
   
   public Figura( Color color ) {
     this.color = color;

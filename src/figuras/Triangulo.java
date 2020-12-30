@@ -9,6 +9,7 @@ import java.awt.Point;
  * @author Soporte
  */
 public class Triangulo extends Rectangulo {
+    
 
     public Triangulo(Point ubicacion) {
         super(ubicacion);
