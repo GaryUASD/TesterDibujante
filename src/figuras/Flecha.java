@@ -30,7 +30,6 @@ public class Flecha extends Rectangulo {
     @Override
     public void dibujar(Graphics g) {
 
-      
         Point punto1 = new Point(ubicacion.x, ubicacion.y);
         Point punto2 = new Point(ubicacion.x, ubicacion.y + altura);
         Point punto3 = new Point(ubicacion.x + anchura, ubicacion.y + altura);
@@ -48,5 +47,4 @@ public class Flecha extends Rectangulo {
         g.drawPolygon(puntosX, puntosY, 8);
     }
 
-    
 }
