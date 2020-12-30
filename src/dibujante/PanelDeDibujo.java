@@ -41,8 +41,6 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemRombo().isSelected()) {
           figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
-        } else if (ventana.getMenuItemCuadrado().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
         } else if (ventana.getMenuItemTrianguloRectangulo().isSelected()) {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemCubeta().isSelected()) {
@@ -62,6 +60,15 @@ public class PanelDeDibujo extends JPanel {
         } 
         else if (ventana.MenuItemTrianguloEscaleno().isSelected()) {
             figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
+            
+        }else if (ventana.getMenuItemSemiCirculo().isSelected()) {
+            figuraActual = new SemiCirculo(evento.getPoint(), colorDeBorde, colorDeFondo);
+            
+        }else if (ventana.getMenuitemCrescent().isSelected()) {
+            figuraActual = new Crescent(evento.getPoint(), colorDeBorde, colorDeFondo);
+            
+        }else if (ventana.getMenuitemAnillo().isSelected()) {
+            figuraActual = new Anillo(evento.getPoint(), colorDeBorde, colorDeFondo);
             
         }else{
           figuraActual = new DibujoLibre(evento.getPoint());
@@ -84,9 +91,15 @@ public class PanelDeDibujo extends JPanel {
           figuraActual = new DibujoLibre(evento.getPoint());
         } else if (ventana.getbtnEscalene().isSelected()) {
            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
-        } else if (ventana.getBtnFlecha().isSelected()) {
+        } else if (ventana.getBtnSemiCircle().isSelected()) {
+           figuraActual = new SemiCirculo(evento.getPoint(), colorDeBorde, colorDeFondo);
+        } else if (ventana.getBtnCrescent().isSelected()) {
+           figuraActual = new Crescent(evento.getPoint(), colorDeBorde, colorDeFondo);
+        }else if (ventana.getBtnAnillo().isSelected()) {
+           figuraActual = new Anillo(evento.getPoint(), colorDeBorde, colorDeFondo);
+        }else if (ventana.getBtnFlecha().isSelected()) {
            figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
-                }
+        }
 
 
         figuraActual.setColor(colorDeBorde);
