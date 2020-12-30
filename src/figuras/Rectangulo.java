@@ -56,7 +56,6 @@ public class Rectangulo extends Figura{
     } else {
       int x = ubicacion.x + ((anchura < 0) ? this.anchura : 0);
       int y = ubicacion.y + ((altura < 0) ? this.altura : 0);
-
       g.drawRect(x, y, Math.abs(anchura), Math.abs(altura));
     }
   }
