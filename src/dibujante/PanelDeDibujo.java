@@ -69,7 +69,7 @@ public class PanelDeDibujo extends JPanel {
 
         //Agregando los condicionales para seleccionar la figura a dibujar apartir de los iconos de las figuras.
         if (ventana.getBtnRectangulo().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
+          figuraActual = new Rectangulo(evento.getPoint(),false,colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnLinea().isSelected()) {
           figuraActual = new Linea(evento.getPoint(), evento.getPoint(), colorDeBorde);
         } else if (ventana.getBtnCuadrado().isSelected()) {
