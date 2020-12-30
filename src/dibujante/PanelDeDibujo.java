@@ -29,6 +29,7 @@ public class PanelDeDibujo extends JPanel {
     figuras = new ArrayList<>();
 
     this.addMouseListener(new MouseAdapter() {
+      
       @Override
       public void mousePressed(MouseEvent evento) {
         colorDeBorde = ventana.getBtnColorBorde().getBackground();
@@ -37,18 +38,16 @@ public class PanelDeDibujo extends JPanel {
         //Condicionales para detectar cual es la figura seleccionada a dibujar  apartir de los menuItem
         if (ventana.getMenuItemLinea().isSelected()) {
           figuraActual = new Linea(evento.getPoint(), evento.getPoint(), colorDeBorde);
-        } else if (ventana.getMenuItemRectangulo().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
+        }else if (ventana.getMenuItemRectangulo().isSelected()) {
+         figuraActual = new Rectangulo(evento.getPoint(),false,colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemRombo().isSelected()) {
           figuraActual = new Rombo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemTrianguloRectangulo().isSelected()) {
           figuraActual = new TrianguloRectangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getMenuItemCubeta().isSelected()) {
           figuraActual = new Cubeta(evento.getPoint(), colorDeBorde, PanelDeDibujo.this);
-
         } else  if (ventana.getMenuItemCuadrado().isSelected()) {
           figuraActual = new Rectangulo(evento.getPoint(),true,colorDeBorde, colorDeFondo);//Cuadrado
-
         } else if(ventana.getMenuItemTriangulo().isSelected()) {
            figuraActual = new Triangulo(evento.getPoint(), colorDeBorde, colorDeFondo);
          } 
@@ -59,9 +58,9 @@ public class PanelDeDibujo extends JPanel {
             figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
         } 
         else if (ventana.MenuItemTrianguloEscaleno().isSelected()) {
-            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
-            
-        }else if (ventana.getMenuItemSemiCirculo().isSelected()) {
+
+            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);   
+        } else if (ventana.getMenuItemSemiCirculo().isSelected()) {
             figuraActual = new SemiCirculo(evento.getPoint(), colorDeBorde, colorDeFondo);
             
         }else if (ventana.getMenuitemCrescent().isSelected()) {
@@ -76,7 +75,7 @@ public class PanelDeDibujo extends JPanel {
 
         //Agregando los condicionales para seleccionar la figura a dibujar apartir de los iconos de las figuras.
         if (ventana.getBtnRectangulo().isSelected()) {
-          figuraActual = new Rectangulo(evento.getPoint());
+          figuraActual = new Rectangulo(evento.getPoint(),false,colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnLinea().isSelected()) {
           figuraActual = new Linea(evento.getPoint(), evento.getPoint(), colorDeBorde);
         } else if (ventana.getBtnCuadrado().isSelected()) {
