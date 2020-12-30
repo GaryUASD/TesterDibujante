@@ -17,14 +17,7 @@ public class Rectangulo extends Figura{
   boolean esCuadrado;
   Color colorFondo;
   Color colorBorde;
-  
-  public Rectangulo(Point ubicacion) {    // Ubicacion es el punto que se obtiene cuando el boton del mouse esta presionado. Este se le pasa como parametro al constructor de cada figura.
-    this.ubicacion = ubicacion;     
-    anchura = 0;
-    altura = 0;
-    this.esCuadrado=false;
-    
-  }
+
   
   public Rectangulo(Point ubicacion, boolean escuadrado,Color colorBorde, Color colorFondo) {//Metodo para el cuadrado
     this.ubicacion = ubicacion;
@@ -40,7 +33,14 @@ public class Rectangulo extends Figura{
     anchura = puntoActual.x - ubicacion.x;
     altura = puntoActual.y - ubicacion.y;
   }
-
+  
+  public Rectangulo(Point ubicacion) {    // Ubicacion es el punto que se obtiene cuando el boton del mouse esta presionado. Este se le pasa como parametro al constructor de cada figura.
+    this.ubicacion = ubicacion;     
+    anchura = 0;
+    altura = 0;
+    this.esCuadrado=false;
+    
+  }
   @Override
   public void dibujar(Graphics g) {
     if (esCuadrado) {//Metodo del cuadrado
@@ -54,10 +54,21 @@ public class Rectangulo extends Figura{
       g.drawRect(x, y, Math.abs(anchura), Math.abs(anchura));
 
     } else {
-      int x = ubicacion.x + ((anchura < 0) ? this.anchura : 0);
-      int y = ubicacion.y + ((altura < 0) ? this.altura : 0);
 
-      g.drawRect(x, y, Math.abs(anchura), Math.abs(altura));
+        
+        Point punto1 = new Point(ubicacion.x, ubicacion.y);
+        Point punto2 = new Point(ubicacion.x+anchura,ubicacion.y);
+        Point punto3 = new Point( ubicacion.x +anchura,ubicacion.y+altura);
+        Point punto4 = new Point(ubicacion.x , ubicacion.y+altura);
+        int[] puntosX = new int[]{punto1.x, punto2.x, punto3.x, punto4.x};
+        int[] puntosY = new int[]{punto1.y, punto2.y, punto3.y, punto4.y};
+        
+        g.setColor(this.colorFondo);
+        g.fillPolygon(puntosX, puntosY, puntosX.length);
+        g.setColor(this.colorBorde);
+        g.drawPolygon( puntosX, puntosY, puntosX.length);
+
+
     }
   }
 }
