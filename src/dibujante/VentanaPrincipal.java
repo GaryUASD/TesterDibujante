@@ -418,6 +418,11 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     menuItemRombo.setText("Rombo");
     menuItemRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
     jMenu2.add(menuItemRombo);
+      
+    grupoBotonesFiguras.add(menuItemParalelogramo);
+    menuItemParalelogramo.setText("Paralelogramo");
+    menuItemParalelogramo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
+    jMenu2.add(menuItemParalelogramo);
 
     grupoBotonesFiguras.add(menuItemCuadrado);
     menuItemCuadrado.setText("Cuadrado");
@@ -631,9 +636,14 @@ public class VentanaPrincipal extends javax.swing.JFrame {
   private javax.swing.JRadioButtonMenuItem menuItemRombo;
   private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
   private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
+  private javax.swing.JRadioButtonMenuItem menuItemParalelogramo;
   // End of variables declaration//GEN-END:variables
 
     public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
+        return menuItemLapiz;
+    }
+    
+     public javax.swing.JRadioButtonMenuItem getMenuItemParalelogramo() {
         return menuItemLapiz;
     }
 
