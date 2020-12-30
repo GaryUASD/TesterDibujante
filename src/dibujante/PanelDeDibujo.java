@@ -29,6 +29,11 @@ public class PanelDeDibujo extends JPanel {
         figuras = new ArrayList<>();
 
         this.addMouseListener(new MouseAdapter() {
+            
+ @Override
+    public void mousePressed(MouseEvent evento) {
+        colorDeBorde = ventana.getBtnColorBorde().getBackground();
+        colorDeFondo = ventana.getBtnColorFondo().getBackground();
 
         //Condicionales para detectar cual es la figura seleccionada a dibujar  apartir de los menuItem
         if (ventana.getMenuItemLinea().isSelected()) {
