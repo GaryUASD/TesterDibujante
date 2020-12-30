@@ -25,8 +25,8 @@ public class TrianguloRectangulo extends Rectangulo {
 
     @Override
     public void actualizar(Point puntoActual) {    //puntoActual es el punto que se obtiene cuando al presionar el boton del mouse el puntero es arrastrado sobre el panel de dibujo. Este se le pasa como parametro al metodo actualizar de cada figura.
-        anchura = puntoActual.x - ubicacion.x;
-        altura = puntoActual.y - ubicacion.y;
+      anchura = puntoActual.x - ubicacion.x;       //La variable puntoActual.x represena el punto final en el eje X y la variable ubicacion.x representa el punto inicial en el eje X.
+      altura = puntoActual.y - ubicacion.y;        //La variable puntoActual.y represena el punto final en el eje Y y la variable ubicacion.y representa el punto inicial en el eje Y.
     }
 
     @Override

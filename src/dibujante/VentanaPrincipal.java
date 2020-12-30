@@ -38,7 +38,6 @@ import javax.swing.JToggleButton;
  * @author josearielpereyra
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
-
     /**
      * Creates new form VentanaPrincipal
      */
@@ -468,6 +467,15 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     jMenu2.add(MenuItemFlecha);
 
     jMenuBar1.add(jMenu2);
+    
+        grupoBotonesFiguras.add(menuItemParalelogramo);
+        menuItemParalelogramo.setText("Paralelogramo");
+        menuItemParalelogramo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemParalelogramoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuItemParalelogramo);
 
     setJMenuBar(jMenuBar1);
 
@@ -533,10 +541,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     private void MenuItemTrianguloEscalenoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_MenuItemTrianguloEscalenoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_MenuItemTrianguloEscalenoActionPerformed
-
-    /**
-     * @param args the command line arguments
-     */
+  
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
@@ -559,6 +564,7 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VentanaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+      
         //</editor-fold>
 
         /* Create and display the form */
@@ -761,5 +767,4 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     public javax.swing.JRadioButtonMenuItem getMenuItemTriangulo() {
         return menuItemTriangulo;
     }
-
 }

@@ -143,6 +143,7 @@
               </Events>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemCubeta">
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemParalelogramo">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
@@ -190,6 +191,12 @@
                   <Image iconType="3" name="/icons/arrow.png"/>
                 </Property>
               </Properties>
+            </MenuItem>
+                <Property name="text" type="java.lang.String" value="Paralelogramo"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemParalelogramoActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>

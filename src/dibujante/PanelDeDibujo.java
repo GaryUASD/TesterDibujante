@@ -29,6 +29,7 @@ public class PanelDeDibujo extends JPanel {
     figuras = new ArrayList<>();
 
     this.addMouseListener(new MouseAdapter() {
+      
       @Override
       public void mousePressed(MouseEvent evento) {
         colorDeBorde = ventana.getBtnColorBorde().getBackground();
@@ -57,9 +58,10 @@ public class PanelDeDibujo extends JPanel {
             figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
         } 
         else if (ventana.MenuItemTrianguloEscaleno().isSelected()) {
-            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
-            
-        }else{
+            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);   
+        } else if(ventana.getMenuItemParalelogramo().isSelected() ){
+           figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, ColorDeFondo);
+         } else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
 
@@ -82,7 +84,7 @@ public class PanelDeDibujo extends JPanel {
            figuraActual = new TrianguloEscaleno(evento.getPoint(), colorDeBorde, colorDeFondo);
         } else if (ventana.getBtnFlecha().isSelected()) {
            figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
-                }
+        }
 
 
         figuraActual.setColor(colorDeBorde);
