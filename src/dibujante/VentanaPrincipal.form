@@ -240,6 +240,20 @@
                   <Image iconType="3" name="/icons/circle_double_icon_137762.png"/>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="menuItemAnilloActionPerformed"/>
+              </Events>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemOctagono">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="Octagono"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Jose Herrera\Documents\NetBeansProjects\DibujanteSede\DibujanteSede\DibujanteSede\src\icons\059octagon_99897 (1).png"/>
+                </Property>
+              </Properties>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -685,6 +699,16 @@
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/circle_double_icon_137762.png"/>
+                </Property>
+              </Properties>
+            </Component>
+            <Component class="javax.swing.JToggleButton" name="btnOctagono">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="2" name="C:\Users\Jose Herrera\Documents\NetBeansProjects\DibujanteSede\DibujanteSede\DibujanteSede\src\icons\059octagon_99897 (1).png"/>
                 </Property>
               </Properties>
             </Component>

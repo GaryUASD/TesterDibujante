@@ -68,7 +68,8 @@ public class PanelDeDibujo extends JPanel {
             
         }else if (ventana.getMenuitemAnillo().isSelected()) {
             figuraActual = new Anillo(evento.getPoint(), colorDeBorde, colorDeFondo);
-            
+        }else if (ventana.getMenuitemOctagono().isSelected()) {
+            figuraActual = new Octagono(evento.getPoint(), colorDeBorde, colorDeFondo);  
         }else if (ventana.getMenuItemParalelogramo().isSelected()) {
             figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else{
@@ -98,6 +99,8 @@ public class PanelDeDibujo extends JPanel {
            figuraActual = new Crescent(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else if (ventana.getBtnAnillo().isSelected()) {
            figuraActual = new Anillo(evento.getPoint(), colorDeBorde, colorDeFondo);
+       }else if (ventana.getBtnOctagono().isSelected()) {
+           figuraActual = new Octagono(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else if (ventana.getBtnFlecha().isSelected()) {
            figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else if (ventana.getBtnParallelogram().isSelected()) {
