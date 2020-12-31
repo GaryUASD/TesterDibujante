@@ -170,6 +170,9 @@
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Kite"/>
+                <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                  <Color id="Cursor Por defecto"/>
+                </Property>
               </Properties>
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
@@ -252,6 +255,18 @@
                 <Property name="text" type="java.lang.String" value="Octagono"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/059octagon_99897 (1).png"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemPentagono">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
+                <Property name="selected" type="boolean" value="true"/>
+                <Property name="text" type="java.lang.String" value="Pentagono"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/pentagon.png"/>
                 </Property>
               </Properties>
             </MenuItem>
@@ -370,9 +385,6 @@
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnColorFondo">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesRellenoColores"/>
                 </Property>
@@ -426,9 +438,6 @@
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnWhite">
               <Properties>
-                <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                  <Color blue="ff" green="ff" red="ff" type="rgb"/>
-                </Property>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoDeColores"/>
                 </Property>
@@ -580,7 +589,6 @@
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/pentagon.png"/>
                 </Property>
-                <Property name="enabled" type="boolean" value="false"/>
               </Properties>
             </Component>
             <Component class="javax.swing.JToggleButton" name="btnHexagon">
