@@ -86,436 +86,447 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
 
   
-   // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-   private void initComponents() {
-
-      grupoBotonesFiguras = new javax.swing.ButtonGroup();
-      jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
-      jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
-      jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
-      grupoDeColores = new javax.swing.ButtonGroup();
-      grupoBotonesRellenoColores = new javax.swing.ButtonGroup();
-      jMenuItem2 = new javax.swing.JMenuItem();
-      ToolBar = new javax.swing.JToolBar();
-      BtnG = new javax.swing.JButton();
-      jSeparator2 = new javax.swing.JToolBar.Separator();
-      btnLapiz = new javax.swing.JToggleButton();
-      jSeparator5 = new javax.swing.JToolBar.Separator();
-      jPanel2 = new javax.swing.JPanel();
-      jLabel1 = new javax.swing.JLabel();
-      btnColorBorde = new javax.swing.JToggleButton();
-      jLabel3 = new javax.swing.JLabel();
-      btnColorFondo = new javax.swing.JToggleButton();
-      jLabel4 = new javax.swing.JLabel();
-      btnRestablecerColores = new javax.swing.JButton();
-      jSeparator3 = new javax.swing.JToolBar.Separator();
-      GridColors = new javax.swing.JPanel();
-      btnBlack = new javax.swing.JToggleButton();
-      btnWhite = new javax.swing.JToggleButton();
-      btnBlue = new javax.swing.JToggleButton();
-      btnRed = new javax.swing.JToggleButton();
-      btnYellow = new javax.swing.JToggleButton();
-      btnGreen = new javax.swing.JToggleButton();
-      btnColor = new javax.swing.JButton();
-      BtnColorC = new javax.swing.JButton();
-      jSeparator4 = new javax.swing.JToolBar.Separator();
-      jLabel2 = new javax.swing.JLabel();
-      jPanel1 = new javax.swing.JPanel();
-      btnRectangulo = new javax.swing.JToggleButton();
-      btnTrianguloRectangulo = new javax.swing.JToggleButton();
-      btnRombo = new javax.swing.JToggleButton();
-      btnCuadrado = new javax.swing.JToggleButton();
-      btnLinea = new javax.swing.JToggleButton();
-      btnPentagon = new javax.swing.JToggleButton();
-      btnHexagon = new javax.swing.JToggleButton();
-      btnTriangle = new javax.swing.JToggleButton();
-      btnCircle = new javax.swing.JToggleButton();
-      btnElipse = new javax.swing.JToggleButton();
-      btnStrat = new javax.swing.JToggleButton();
-      btnParallelogram = new javax.swing.JToggleButton();
-      btnEscalene = new javax.swing.JToggleButton();
-      btnFlecha = new javax.swing.JToggleButton();
-      btnSemiCircle = new javax.swing.JToggleButton();
-      btnCrescent = new javax.swing.JToggleButton();
-      btnAnillo = new javax.swing.JToggleButton();
-      jMenuBar1 = new javax.swing.JMenuBar();
-      jMenu1 = new javax.swing.JMenu();
-      jMenuItem2_Save2 = new javax.swing.JMenuItem();
-      jSeparator1 = new javax.swing.JPopupMenu.Separator();
-      jMenuItem1 = new javax.swing.JMenuItem();
-      jMenu2 = new javax.swing.JMenu();
-      menuItemLapiz = new javax.swing.JRadioButtonMenuItem();
-      menuItemLinea = new javax.swing.JRadioButtonMenuItem();
-      menuItemRectangulo = new javax.swing.JRadioButtonMenuItem();
-      menuItemRombo = new javax.swing.JRadioButtonMenuItem();
-      menuItemCuadrado = new javax.swing.JRadioButtonMenuItem();
-      menuItemTrianguloRectangulo = new javax.swing.JRadioButtonMenuItem();
-      menuItemCubeta = new javax.swing.JRadioButtonMenuItem();
-      menuItemTriangulo = new javax.swing.JRadioButtonMenuItem();
-      btnKite = new javax.swing.JRadioButtonMenuItem();
-      MenuItemTrianguloEscaleno = new javax.swing.JRadioButtonMenuItem();
-      MenuItemFlecha = new javax.swing.JRadioButtonMenuItem();
-      menuItemParalelogramo = new javax.swing.JRadioButtonMenuItem();
-      menuitemCrescent = new javax.swing.JRadioButtonMenuItem();
-      menuItemSemiCirculo = new javax.swing.JRadioButtonMenuItem();
-      menuItemAnillo = new javax.swing.JRadioButtonMenuItem();
-
-      jRadioButtonMenuItem1.setSelected(true);
-      jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
-
-      jRadioButtonMenuItem2.setSelected(true);
-      jRadioButtonMenuItem2.setText("jRadioButtonMenuItem2");
-
-      jRadioButtonMenuItem3.setSelected(true);
-      jRadioButtonMenuItem3.setText("jRadioButtonMenuItem3");
-
-      jMenuItem2.setText("jMenuItem2");
-
-      setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-      ToolBar.setRollover(true);
-
-      BtnG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save.png"))); // NOI18N
-      BtnG.setText("Guardar");
-      BtnG.setEnabled(false);
-      BtnG.setFocusable(false);
-      BtnG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-      BtnG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-      BtnG.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            BtnGActionPerformed(evt);
-         }
-      });
-      ToolBar.add(BtnG);
-      ToolBar.add(jSeparator2);
-
-      grupoBotonesFiguras.add(btnLapiz);
-      btnLapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pencil.png"))); // NOI18N
-      btnLapiz.setFocusable(false);
-      btnLapiz.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-      btnLapiz.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-      ToolBar.add(btnLapiz);
-      ToolBar.add(jSeparator5);
-
-      jPanel2.setLayout(new java.awt.GridLayout(0, 1));
-
-      jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-      jLabel1.setText("Color de  Bordes:");
-      jPanel2.add(jLabel1);
-
-      btnColorBorde.setBackground(new java.awt.Color(0, 0, 0));
-      grupoBotonesRellenoColores.add(btnColorBorde);
-      btnColorBorde.setSelected(true);
-      btnColorBorde.setText(" ");
-      btnColorBorde.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(128, 128, 128), 5, true));
-      btnColorBorde.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnColorBordeActionPerformed(evt);
-         }
-      });
-      jPanel2.add(btnColorBorde);
-
-      jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-      jLabel3.setText("Color de Relleno:");
-      jPanel2.add(jLabel3);
-
-      btnColorFondo.setBackground(new java.awt.Color(255, 255, 255));
-      grupoBotonesRellenoColores.add(btnColorFondo);
-      btnColorFondo.setText(" ");
-      btnColorFondo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
-      btnColorFondo.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnColorFondoActionPerformed(evt);
-         }
-      });
-      jPanel2.add(btnColorFondo);
-
-      jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-      jLabel4.setText("Reiniciar Colores:");
-      jPanel2.add(jLabel4);
-
-      btnRestablecerColores.setText("Restablecer");
-      btnRestablecerColores.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnRestablecerColoresActionPerformed(evt);
-         }
-      });
-      jPanel2.add(btnRestablecerColores);
-
-      ToolBar.add(jPanel2);
-      ToolBar.add(jSeparator3);
-
-      GridColors.setLayout(new java.awt.GridLayout(2, 0));
-
-      btnBlack.setBackground(new java.awt.Color(0, 0, 0));
-      grupoDeColores.add(btnBlack);
-      GridColors.add(btnBlack);
-
-      btnWhite.setBackground(new java.awt.Color(255, 255, 255));
-      grupoDeColores.add(btnWhite);
-      GridColors.add(btnWhite);
-
-      btnBlue.setBackground(new java.awt.Color(0, 153, 255));
-      grupoDeColores.add(btnBlue);
-      btnBlue.setPreferredSize(new java.awt.Dimension(28, 28));
-      GridColors.add(btnBlue);
-
-      btnRed.setBackground(new java.awt.Color(255, 0, 51));
-      grupoDeColores.add(btnRed);
-      GridColors.add(btnRed);
-
-      btnYellow.setBackground(new java.awt.Color(255, 255, 0));
-      grupoDeColores.add(btnYellow);
-      GridColors.add(btnYellow);
-
-      btnGreen.setBackground(new java.awt.Color(0, 204, 51));
-      grupoDeColores.add(btnGreen);
-      GridColors.add(btnGreen);
-
-      grupoDeColores.add(btnColor);
-      btnColor.setFocusable(false);
-      btnColor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-      btnColor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-      GridColors.add(btnColor);
-
-      ToolBar.add(GridColors);
-
-      BtnColorC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rueda-de-color-2.png"))); // NOI18N
-      BtnColorC.setText("Editar Color");
-      BtnColorC.setFocusable(false);
-      BtnColorC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-      BtnColorC.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-      BtnColorC.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            BtnColorCActionPerformed(evt);
-         }
-      });
-      ToolBar.add(BtnColorC);
-      ToolBar.add(jSeparator4);
-
-      jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/geometric.png"))); // NOI18N
-      jLabel2.setText("Figuras");
-      ToolBar.add(jLabel2);
-
-      jPanel1.setLayout(new java.awt.GridLayout(3, 0));
-
-      grupoBotonesFiguras.add(btnRectangulo);
-      btnRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rectangle.png"))); // NOI18N
-      jPanel1.add(btnRectangulo);
-
-      grupoBotonesFiguras.add(btnTrianguloRectangulo);
-      btnTrianguloRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trianglerectangle.png"))); // NOI18N
-      jPanel1.add(btnTrianguloRectangulo);
-
-      grupoBotonesFiguras.add(btnRombo);
-      btnRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
-      jPanel1.add(btnRombo);
-
-      grupoBotonesFiguras.add(btnCuadrado);
-      btnCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
-      jPanel1.add(btnCuadrado);
-
-      grupoBotonesFiguras.add(btnLinea);
-      btnLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
-      jPanel1.add(btnLinea);
-
-      grupoBotonesFiguras.add(btnPentagon);
-      btnPentagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pentagon.png"))); // NOI18N
-      btnPentagon.setEnabled(false);
-      jPanel1.add(btnPentagon);
-
-      grupoBotonesFiguras.add(btnHexagon);
-      btnHexagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hexagon.png"))); // NOI18N
-      btnHexagon.setEnabled(false);
-      jPanel1.add(btnHexagon);
-
-      grupoBotonesFiguras.add(btnTriangle);
-      btnTriangle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
-      jPanel1.add(btnTriangle);
-
-      grupoBotonesFiguras.add(btnCircle);
-      btnCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle.png"))); // NOI18N
-      btnCircle.setEnabled(false);
-      jPanel1.add(btnCircle);
-
-      grupoBotonesFiguras.add(btnElipse);
-      btnElipse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ellipse.png"))); // NOI18N
-      btnElipse.setEnabled(false);
-      jPanel1.add(btnElipse);
-
-      grupoBotonesFiguras.add(btnStrat);
-      btnStrat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/star.png"))); // NOI18N
-      btnStrat.setEnabled(false);
-      jPanel1.add(btnStrat);
-
-      grupoBotonesFiguras.add(btnParallelogram);
-      btnParallelogram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
-      jPanel1.add(btnParallelogram);
-
-      grupoBotonesFiguras.add(btnEscalene);
-      btnEscalene.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
-      jPanel1.add(btnEscalene);
-
-      grupoBotonesFiguras.add(btnFlecha);
-      btnFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
-      jPanel1.add(btnFlecha);
-
-      grupoBotonesFiguras.add(btnSemiCircle);
-      btnSemiCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
-      btnSemiCircle.setToolTipText("SemiCirculo");
-      jPanel1.add(btnSemiCircle);
-
-      grupoBotonesFiguras.add(btnCrescent);
-      btnCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
-      btnCrescent.setToolTipText("Media Luna");
-      btnCrescent.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            btnCrescentActionPerformed(evt);
-         }
-      });
-      jPanel1.add(btnCrescent);
-
-      grupoBotonesFiguras.add(btnAnillo);
-      btnAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
-      jPanel1.add(btnAnillo);
-
-      ToolBar.add(jPanel1);
-
-      getContentPane().add(ToolBar, java.awt.BorderLayout.PAGE_START);
-
-      jMenu1.setText("Archivo");
-
-      jMenuItem2_Save2.setText("Guardar Como...");
-      jMenuItem2_Save2.setEnabled(false);
-      jMenuItem2_Save2.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            jMenuItem2_Save2ActionPerformed(evt);
-         }
-      });
-      jMenu1.add(jMenuItem2_Save2);
-      jMenu1.add(jSeparator1);
-
-      jMenuItem1.setText("Salir");
-      jMenu1.add(jMenuItem1);
-
-      jMenuBar1.add(jMenu1);
-
-      jMenu2.setText("Figuras");
-      grupoBotonesFiguras.add(jMenu2);
-
-      grupoBotonesFiguras.add(menuItemLapiz);
-      menuItemLapiz.setText("Lapiz");
-      menuItemLapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pencil.png"))); // NOI18N
-      jMenu2.add(menuItemLapiz);
-
-      grupoBotonesFiguras.add(menuItemLinea);
-      menuItemLinea.setText("Linea");
-      menuItemLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
-      menuItemLinea.addFocusListener(new java.awt.event.FocusAdapter() {
-         public void focusGained(java.awt.event.FocusEvent evt) {
-            menuItemLineaFocusGained(evt);
-         }
-      });
-      menuItemLinea.addMouseListener(new java.awt.event.MouseAdapter() {
-         public void mouseClicked(java.awt.event.MouseEvent evt) {
-            menuItemLineaMouseClicked(evt);
-         }
-         public void mousePressed(java.awt.event.MouseEvent evt) {
-            menuItemLineaMousePressed(evt);
-         }
-      });
-      menuItemLinea.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            menuItemLineaActionPerformed(evt);
-         }
-      });
-      jMenu2.add(menuItemLinea);
-
-      grupoBotonesFiguras.add(menuItemRectangulo);
-      menuItemRectangulo.setText("Rectangulo");
-      menuItemRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rectangle.png"))); // NOI18N
-      jMenu2.add(menuItemRectangulo);
-
-      grupoBotonesFiguras.add(menuItemRombo);
-      menuItemRombo.setText("Rombo");
-      menuItemRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
-      jMenu2.add(menuItemRombo);
-
-      grupoBotonesFiguras.add(menuItemCuadrado);
-      menuItemCuadrado.setText("Cuadrado");
-      menuItemCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
-      menuItemCuadrado.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            menuItemCuadradoActionPerformed(evt);
-         }
-      });
-      jMenu2.add(menuItemCuadrado);
-
-      grupoBotonesFiguras.add(menuItemTrianguloRectangulo);
-      menuItemTrianguloRectangulo.setText("Triangulo Rectangulo");
-      menuItemTrianguloRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trianglerectangle.png"))); // NOI18N
-      menuItemTrianguloRectangulo.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            menuItemTrianguloRectanguloActionPerformed(evt);
-         }
-      });
-      jMenu2.add(menuItemTrianguloRectangulo);
-
-      grupoBotonesFiguras.add(menuItemCubeta);
-      menuItemCubeta.setText("Cubeta");
-      menuItemCubeta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/FillWithColor.png"))); // NOI18N
-      jMenu2.add(menuItemCubeta);
-
-      grupoBotonesFiguras.add(menuItemTriangulo);
-      menuItemTriangulo.setText("Triangulo");
-      menuItemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
-      jMenu2.add(menuItemTriangulo);
-
-      grupoBotonesFiguras.add(btnKite);
-      btnKite.setText("Kite");
-      jMenu2.add(btnKite);
-
-      grupoBotonesFiguras.add(MenuItemTrianguloEscaleno);
-      MenuItemTrianguloEscaleno.setText("Triangulo Escaleno");
-      MenuItemTrianguloEscaleno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
-      MenuItemTrianguloEscaleno.addActionListener(new java.awt.event.ActionListener() {
-         public void actionPerformed(java.awt.event.ActionEvent evt) {
-            MenuItemTrianguloEscalenoActionPerformed(evt);
-         }
-      });
-      jMenu2.add(MenuItemTrianguloEscaleno);
-
-      grupoBotonesFiguras.add(MenuItemFlecha);
-      MenuItemFlecha.setText("Flecha");
-      MenuItemFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
-      jMenu2.add(MenuItemFlecha);
-
-      grupoBotonesFiguras.add(menuItemParalelogramo);
-      menuItemParalelogramo.setText("Paralelogramo");
-      menuItemParalelogramo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
-      jMenu2.add(menuItemParalelogramo);
-
-      grupoBotonesFiguras.add(menuitemCrescent);
-      menuitemCrescent.setText("Crescent");
-      menuitemCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
-      jMenu2.add(menuitemCrescent);
-
-      grupoBotonesFiguras.add(menuItemSemiCirculo);
-      menuItemSemiCirculo.setText("SemiCirculo");
-      menuItemSemiCirculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
-      jMenu2.add(menuItemSemiCirculo);
-
-      grupoBotonesFiguras.add(menuItemAnillo);
-      menuItemAnillo.setText("Anillo");
-      menuItemAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
-      jMenu2.add(menuItemAnillo);
-
-      jMenuBar1.add(jMenu2);
-
-      setJMenuBar(jMenuBar1);
-
-      pack();
-   }// </editor-fold>//GEN-END:initComponents
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        grupoBotonesFiguras = new javax.swing.ButtonGroup();
+        jRadioButtonMenuItem1 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem2 = new javax.swing.JRadioButtonMenuItem();
+        jRadioButtonMenuItem3 = new javax.swing.JRadioButtonMenuItem();
+        grupoDeColores = new javax.swing.ButtonGroup();
+        grupoBotonesRellenoColores = new javax.swing.ButtonGroup();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        ToolBar = new javax.swing.JToolBar();
+        BtnG = new javax.swing.JButton();
+        jSeparator2 = new javax.swing.JToolBar.Separator();
+        btnLapiz = new javax.swing.JToggleButton();
+        jSeparator5 = new javax.swing.JToolBar.Separator();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btnColorBorde = new javax.swing.JToggleButton();
+        jLabel3 = new javax.swing.JLabel();
+        btnColorFondo = new javax.swing.JToggleButton();
+        jLabel4 = new javax.swing.JLabel();
+        btnRestablecerColores = new javax.swing.JButton();
+        jSeparator3 = new javax.swing.JToolBar.Separator();
+        GridColors = new javax.swing.JPanel();
+        btnBlack = new javax.swing.JToggleButton();
+        btnWhite = new javax.swing.JToggleButton();
+        btnBlue = new javax.swing.JToggleButton();
+        btnRed = new javax.swing.JToggleButton();
+        btnYellow = new javax.swing.JToggleButton();
+        btnGreen = new javax.swing.JToggleButton();
+        btnColor = new javax.swing.JButton();
+        BtnColorC = new javax.swing.JButton();
+        jSeparator4 = new javax.swing.JToolBar.Separator();
+        jLabel2 = new javax.swing.JLabel();
+        jPanel1 = new javax.swing.JPanel();
+        btnRectangulo = new javax.swing.JToggleButton();
+        btnTrianguloRectangulo = new javax.swing.JToggleButton();
+        btnRombo = new javax.swing.JToggleButton();
+        btnCuadrado = new javax.swing.JToggleButton();
+        btnLinea = new javax.swing.JToggleButton();
+        btnPentagon = new javax.swing.JToggleButton();
+        btnHexagon = new javax.swing.JToggleButton();
+        btnTriangle = new javax.swing.JToggleButton();
+        btnCircle = new javax.swing.JToggleButton();
+        btnOvalo = new javax.swing.JToggleButton();
+        btnStrat = new javax.swing.JToggleButton();
+        btnParallelogram = new javax.swing.JToggleButton();
+        btnEscalene = new javax.swing.JToggleButton();
+        btnFlecha = new javax.swing.JToggleButton();
+        btnSemiCircle = new javax.swing.JToggleButton();
+        btnCrescent = new javax.swing.JToggleButton();
+        btnAnillo = new javax.swing.JToggleButton();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        jMenu1 = new javax.swing.JMenu();
+        jMenuItem2_Save2 = new javax.swing.JMenuItem();
+        jSeparator1 = new javax.swing.JPopupMenu.Separator();
+        jMenuItem1 = new javax.swing.JMenuItem();
+        jMenu2 = new javax.swing.JMenu();
+        menuItemLapiz = new javax.swing.JRadioButtonMenuItem();
+        menuItemLinea = new javax.swing.JRadioButtonMenuItem();
+        menuItemRectangulo = new javax.swing.JRadioButtonMenuItem();
+        menuItemRombo = new javax.swing.JRadioButtonMenuItem();
+        menuItemCuadrado = new javax.swing.JRadioButtonMenuItem();
+        menuItemTrianguloRectangulo = new javax.swing.JRadioButtonMenuItem();
+        menuItemCubeta = new javax.swing.JRadioButtonMenuItem();
+        menuItemTriangulo = new javax.swing.JRadioButtonMenuItem();
+        menuItemOvalo = new javax.swing.JRadioButtonMenuItem();
+        btnKite = new javax.swing.JRadioButtonMenuItem();
+        MenuItemTrianguloEscaleno = new javax.swing.JRadioButtonMenuItem();
+        MenuItemFlecha = new javax.swing.JRadioButtonMenuItem();
+        menuItemParalelogramo = new javax.swing.JRadioButtonMenuItem();
+        menuitemCrescent = new javax.swing.JRadioButtonMenuItem();
+        menuItemSemiCirculo = new javax.swing.JRadioButtonMenuItem();
+        menuItemAnillo = new javax.swing.JRadioButtonMenuItem();
+
+        jRadioButtonMenuItem1.setSelected(true);
+        jRadioButtonMenuItem1.setText("jRadioButtonMenuItem1");
+
+        jRadioButtonMenuItem2.setSelected(true);
+        jRadioButtonMenuItem2.setText("jRadioButtonMenuItem2");
+
+        jRadioButtonMenuItem3.setSelected(true);
+        jRadioButtonMenuItem3.setText("jRadioButtonMenuItem3");
+
+        jMenuItem2.setText("jMenuItem2");
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        ToolBar.setRollover(true);
+
+        BtnG.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/save.png"))); // NOI18N
+        BtnG.setText("Guardar");
+        BtnG.setEnabled(false);
+        BtnG.setFocusable(false);
+        BtnG.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnG.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        BtnG.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnGActionPerformed(evt);
+            }
+        });
+        ToolBar.add(BtnG);
+        ToolBar.add(jSeparator2);
+
+        grupoBotonesFiguras.add(btnLapiz);
+        btnLapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pencil.png"))); // NOI18N
+        btnLapiz.setFocusable(false);
+        btnLapiz.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnLapiz.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        ToolBar.add(btnLapiz);
+        ToolBar.add(jSeparator5);
+
+        jPanel2.setLayout(new java.awt.GridLayout(0, 1));
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Color de  Bordes:");
+        jPanel2.add(jLabel1);
+
+        btnColorBorde.setBackground(new java.awt.Color(0, 0, 0));
+        grupoBotonesRellenoColores.add(btnColorBorde);
+        btnColorBorde.setSelected(true);
+        btnColorBorde.setText(" ");
+        btnColorBorde.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(128, 128, 128), 5, true));
+        btnColorBorde.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnColorBordeActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnColorBorde);
+
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel3.setText("Color de Relleno:");
+        jPanel2.add(jLabel3);
+
+        btnColorFondo.setBackground(new java.awt.Color(255, 255, 255));
+        grupoBotonesRellenoColores.add(btnColorFondo);
+        btnColorFondo.setText(" ");
+        btnColorFondo.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(255, 255, 255), 5, true));
+        btnColorFondo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnColorFondoActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnColorFondo);
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setText("Reiniciar Colores:");
+        jPanel2.add(jLabel4);
+
+        btnRestablecerColores.setText("Restablecer");
+        btnRestablecerColores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestablecerColoresActionPerformed(evt);
+            }
+        });
+        jPanel2.add(btnRestablecerColores);
+
+        ToolBar.add(jPanel2);
+        ToolBar.add(jSeparator3);
+
+        GridColors.setLayout(new java.awt.GridLayout(2, 0));
+
+        btnBlack.setBackground(new java.awt.Color(0, 0, 0));
+        grupoDeColores.add(btnBlack);
+        GridColors.add(btnBlack);
+
+        btnWhite.setBackground(new java.awt.Color(255, 255, 255));
+        grupoDeColores.add(btnWhite);
+        GridColors.add(btnWhite);
+
+        btnBlue.setBackground(new java.awt.Color(0, 153, 255));
+        grupoDeColores.add(btnBlue);
+        btnBlue.setPreferredSize(new java.awt.Dimension(28, 28));
+        GridColors.add(btnBlue);
+
+        btnRed.setBackground(new java.awt.Color(255, 0, 51));
+        grupoDeColores.add(btnRed);
+        GridColors.add(btnRed);
+
+        btnYellow.setBackground(new java.awt.Color(255, 255, 0));
+        grupoDeColores.add(btnYellow);
+        GridColors.add(btnYellow);
+
+        btnGreen.setBackground(new java.awt.Color(0, 204, 51));
+        grupoDeColores.add(btnGreen);
+        GridColors.add(btnGreen);
+
+        grupoDeColores.add(btnColor);
+        btnColor.setFocusable(false);
+        btnColor.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnColor.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        GridColors.add(btnColor);
+
+        ToolBar.add(GridColors);
+
+        BtnColorC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rueda-de-color-2.png"))); // NOI18N
+        BtnColorC.setText("Editar Color");
+        BtnColorC.setFocusable(false);
+        BtnColorC.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        BtnColorC.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        BtnColorC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnColorCActionPerformed(evt);
+            }
+        });
+        ToolBar.add(BtnColorC);
+        ToolBar.add(jSeparator4);
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/geometric.png"))); // NOI18N
+        jLabel2.setText("Figuras");
+        ToolBar.add(jLabel2);
+
+        jPanel1.setLayout(new java.awt.GridLayout(3, 0));
+
+        grupoBotonesFiguras.add(btnRectangulo);
+        btnRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rectangle.png"))); // NOI18N
+        jPanel1.add(btnRectangulo);
+
+        grupoBotonesFiguras.add(btnTrianguloRectangulo);
+        btnTrianguloRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trianglerectangle.png"))); // NOI18N
+        jPanel1.add(btnTrianguloRectangulo);
+
+        grupoBotonesFiguras.add(btnRombo);
+        btnRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
+        jPanel1.add(btnRombo);
+
+        grupoBotonesFiguras.add(btnCuadrado);
+        btnCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
+        jPanel1.add(btnCuadrado);
+
+        grupoBotonesFiguras.add(btnLinea);
+        btnLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
+        jPanel1.add(btnLinea);
+
+        grupoBotonesFiguras.add(btnPentagon);
+        btnPentagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pentagon.png"))); // NOI18N
+        btnPentagon.setEnabled(false);
+        jPanel1.add(btnPentagon);
+
+        grupoBotonesFiguras.add(btnHexagon);
+        btnHexagon.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/hexagon.png"))); // NOI18N
+        btnHexagon.setEnabled(false);
+        btnHexagon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHexagonActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnHexagon);
+
+        grupoBotonesFiguras.add(btnTriangle);
+        btnTriangle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
+        jPanel1.add(btnTriangle);
+
+        grupoBotonesFiguras.add(btnCircle);
+        btnCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle.png"))); // NOI18N
+        btnCircle.setEnabled(false);
+        jPanel1.add(btnCircle);
+
+        grupoBotonesFiguras.add(btnOvalo);
+        btnOvalo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ellipse.png"))); // NOI18N
+        btnOvalo.setToolTipText("Ovalo");
+        jPanel1.add(btnOvalo);
+
+        grupoBotonesFiguras.add(btnStrat);
+        btnStrat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/star.png"))); // NOI18N
+        btnStrat.setEnabled(false);
+        jPanel1.add(btnStrat);
+
+        grupoBotonesFiguras.add(btnParallelogram);
+        btnParallelogram.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
+        jPanel1.add(btnParallelogram);
+
+        grupoBotonesFiguras.add(btnEscalene);
+        btnEscalene.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
+        jPanel1.add(btnEscalene);
+
+        grupoBotonesFiguras.add(btnFlecha);
+        btnFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
+        jPanel1.add(btnFlecha);
+
+        grupoBotonesFiguras.add(btnSemiCircle);
+        btnSemiCircle.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
+        btnSemiCircle.setToolTipText("SemiCirculo");
+        jPanel1.add(btnSemiCircle);
+
+        grupoBotonesFiguras.add(btnCrescent);
+        btnCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
+        btnCrescent.setToolTipText("Media Luna");
+        btnCrescent.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrescentActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCrescent);
+
+        grupoBotonesFiguras.add(btnAnillo);
+        btnAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
+        jPanel1.add(btnAnillo);
+
+        ToolBar.add(jPanel1);
+
+        getContentPane().add(ToolBar, java.awt.BorderLayout.PAGE_START);
+
+        jMenu1.setText("Archivo");
+
+        jMenuItem2_Save2.setText("Guardar Como...");
+        jMenuItem2_Save2.setEnabled(false);
+        jMenuItem2_Save2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem2_Save2ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem2_Save2);
+        jMenu1.add(jSeparator1);
+
+        jMenuItem1.setText("Salir");
+        jMenu1.add(jMenuItem1);
+
+        jMenuBar1.add(jMenu1);
+
+        jMenu2.setText("Figuras");
+        grupoBotonesFiguras.add(jMenu2);
+
+        grupoBotonesFiguras.add(menuItemLapiz);
+        menuItemLapiz.setText("Lapiz");
+        menuItemLapiz.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/pencil.png"))); // NOI18N
+        jMenu2.add(menuItemLapiz);
+
+        grupoBotonesFiguras.add(menuItemLinea);
+        menuItemLinea.setText("Linea");
+        menuItemLinea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/line.png"))); // NOI18N
+        menuItemLinea.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                menuItemLineaFocusGained(evt);
+            }
+        });
+        menuItemLinea.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                menuItemLineaMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                menuItemLineaMousePressed(evt);
+            }
+        });
+        menuItemLinea.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemLineaActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuItemLinea);
+
+        grupoBotonesFiguras.add(menuItemRectangulo);
+        menuItemRectangulo.setText("Rectangulo");
+        menuItemRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rectangle.png"))); // NOI18N
+        jMenu2.add(menuItemRectangulo);
+
+        grupoBotonesFiguras.add(menuItemRombo);
+        menuItemRombo.setText("Rombo");
+        menuItemRombo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/rombe.png"))); // NOI18N
+        jMenu2.add(menuItemRombo);
+
+        grupoBotonesFiguras.add(menuItemCuadrado);
+        menuItemCuadrado.setText("Cuadrado");
+        menuItemCuadrado.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/square.png"))); // NOI18N
+        menuItemCuadrado.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemCuadradoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuItemCuadrado);
+
+        grupoBotonesFiguras.add(menuItemTrianguloRectangulo);
+        menuItemTrianguloRectangulo.setText("Triangulo Rectangulo");
+        menuItemTrianguloRectangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/trianglerectangle.png"))); // NOI18N
+        menuItemTrianguloRectangulo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuItemTrianguloRectanguloActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuItemTrianguloRectangulo);
+
+        grupoBotonesFiguras.add(menuItemCubeta);
+        menuItemCubeta.setText("Cubeta");
+        menuItemCubeta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/FillWithColor.png"))); // NOI18N
+        jMenu2.add(menuItemCubeta);
+
+        grupoBotonesFiguras.add(menuItemTriangulo);
+        menuItemTriangulo.setText("Triangulo");
+        menuItemTriangulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/triangle.png"))); // NOI18N
+        jMenu2.add(menuItemTriangulo);
+
+        grupoBotonesFiguras.add(menuItemOvalo);
+        menuItemOvalo.setText("Ovalo");
+        menuItemOvalo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/ellipse.png"))); // NOI18N
+        jMenu2.add(menuItemOvalo);
+
+        grupoBotonesFiguras.add(btnKite);
+        btnKite.setText("Kite");
+        jMenu2.add(btnKite);
+
+        grupoBotonesFiguras.add(MenuItemTrianguloEscaleno);
+        MenuItemTrianguloEscaleno.setText("Triangulo Escaleno");
+        MenuItemTrianguloEscaleno.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/scalene.png"))); // NOI18N
+        MenuItemTrianguloEscaleno.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                MenuItemTrianguloEscalenoActionPerformed(evt);
+            }
+        });
+        jMenu2.add(MenuItemTrianguloEscaleno);
+
+        grupoBotonesFiguras.add(MenuItemFlecha);
+        MenuItemFlecha.setText("Flecha");
+        MenuItemFlecha.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/arrow.png"))); // NOI18N
+        jMenu2.add(MenuItemFlecha);
+
+        grupoBotonesFiguras.add(menuItemParalelogramo);
+        menuItemParalelogramo.setText("Paralelogramo");
+        menuItemParalelogramo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/parallelogram.png"))); // NOI18N
+        jMenu2.add(menuItemParalelogramo);
+
+        grupoBotonesFiguras.add(menuitemCrescent);
+        menuitemCrescent.setText("Crescent");
+        menuitemCrescent.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/moon-phase-outline_icon-icons.com_73483.png"))); // NOI18N
+        jMenu2.add(menuitemCrescent);
+
+        grupoBotonesFiguras.add(menuItemSemiCirculo);
+        menuItemSemiCirculo.setText("SemiCirculo");
+        menuItemSemiCirculo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/semicircle.png"))); // NOI18N
+        jMenu2.add(menuItemSemiCirculo);
+
+        grupoBotonesFiguras.add(menuItemAnillo);
+        menuItemAnillo.setText("Anillo");
+        menuItemAnillo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/icons/circle_double_icon_137762.png"))); // NOI18N
+        jMenu2.add(menuItemAnillo);
+
+        jMenuBar1.add(jMenu2);
+
+        setJMenuBar(jMenuBar1);
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
 
 
 
@@ -584,6 +595,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
       // TODO add your handling code here:
    }//GEN-LAST:event_btnCrescentActionPerformed
 
+    private void btnHexagonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHexagonActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnHexagonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -622,78 +637,79 @@ public class VentanaPrincipal extends javax.swing.JFrame {
     }
   
 
-   // Variables declaration - do not modify//GEN-BEGIN:variables
-   private javax.swing.JButton BtnColorC;
-   private javax.swing.JButton BtnG;
-   private javax.swing.JPanel GridColors;
-   private javax.swing.JRadioButtonMenuItem MenuItemFlecha;
-   private javax.swing.JRadioButtonMenuItem MenuItemTrianguloEscaleno;
-   private javax.swing.JToolBar ToolBar;
-   private javax.swing.JToggleButton btnAnillo;
-   private javax.swing.JToggleButton btnBlack;
-   private javax.swing.JToggleButton btnBlue;
-   private javax.swing.JToggleButton btnCircle;
-   private javax.swing.JButton btnColor;
-   private javax.swing.JToggleButton btnColorBorde;
-   private javax.swing.JToggleButton btnColorFondo;
-   private javax.swing.JToggleButton btnCrescent;
-   private javax.swing.JToggleButton btnCuadrado;
-   private javax.swing.JToggleButton btnElipse;
-   private javax.swing.JToggleButton btnEscalene;
-   private javax.swing.JToggleButton btnFlecha;
-   private javax.swing.JToggleButton btnGreen;
-   private javax.swing.JToggleButton btnHexagon;
-   private javax.swing.JRadioButtonMenuItem btnKite;
-   private javax.swing.JToggleButton btnLapiz;
-   private javax.swing.JToggleButton btnLinea;
-   private javax.swing.JToggleButton btnParallelogram;
-   private javax.swing.JToggleButton btnPentagon;
-   private javax.swing.JToggleButton btnRectangulo;
-   private javax.swing.JToggleButton btnRed;
-   private javax.swing.JButton btnRestablecerColores;
-   private javax.swing.JToggleButton btnRombo;
-   private javax.swing.JToggleButton btnSemiCircle;
-   private javax.swing.JToggleButton btnStrat;
-   private javax.swing.JToggleButton btnTriangle;
-   private javax.swing.JToggleButton btnTrianguloRectangulo;
-   private javax.swing.JToggleButton btnWhite;
-   private javax.swing.JToggleButton btnYellow;
-   private javax.swing.ButtonGroup grupoBotonesFiguras;
-   private javax.swing.ButtonGroup grupoBotonesRellenoColores;
-   private javax.swing.ButtonGroup grupoDeColores;
-   private javax.swing.JLabel jLabel1;
-   private javax.swing.JLabel jLabel2;
-   private javax.swing.JLabel jLabel3;
-   private javax.swing.JLabel jLabel4;
-   private javax.swing.JMenu jMenu1;
-   private javax.swing.JMenu jMenu2;
-   private javax.swing.JMenuBar jMenuBar1;
-   private javax.swing.JMenuItem jMenuItem1;
-   private javax.swing.JMenuItem jMenuItem2;
-   private javax.swing.JMenuItem jMenuItem2_Save2;
-   private javax.swing.JPanel jPanel1;
-   private javax.swing.JPanel jPanel2;
-   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
-   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
-   private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
-   private javax.swing.JPopupMenu.Separator jSeparator1;
-   private javax.swing.JToolBar.Separator jSeparator2;
-   private javax.swing.JToolBar.Separator jSeparator3;
-   private javax.swing.JToolBar.Separator jSeparator4;
-   private javax.swing.JToolBar.Separator jSeparator5;
-   private javax.swing.JRadioButtonMenuItem menuItemAnillo;
-   private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
-   private javax.swing.JRadioButtonMenuItem menuItemCubeta;
-   private javax.swing.JRadioButtonMenuItem menuItemLapiz;
-   private javax.swing.JRadioButtonMenuItem menuItemLinea;
-   private javax.swing.JRadioButtonMenuItem menuItemParalelogramo;
-   private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
-   private javax.swing.JRadioButtonMenuItem menuItemRombo;
-   private javax.swing.JRadioButtonMenuItem menuItemSemiCirculo;
-   private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
-   private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
-   private javax.swing.JRadioButtonMenuItem menuitemCrescent;
-   // End of variables declaration//GEN-END:variables
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BtnColorC;
+    private javax.swing.JButton BtnG;
+    private javax.swing.JPanel GridColors;
+    private javax.swing.JRadioButtonMenuItem MenuItemFlecha;
+    private javax.swing.JRadioButtonMenuItem MenuItemTrianguloEscaleno;
+    private javax.swing.JToolBar ToolBar;
+    private javax.swing.JToggleButton btnAnillo;
+    private javax.swing.JToggleButton btnBlack;
+    private javax.swing.JToggleButton btnBlue;
+    private javax.swing.JToggleButton btnCircle;
+    private javax.swing.JButton btnColor;
+    private javax.swing.JToggleButton btnColorBorde;
+    private javax.swing.JToggleButton btnColorFondo;
+    private javax.swing.JToggleButton btnCrescent;
+    private javax.swing.JToggleButton btnCuadrado;
+    private javax.swing.JToggleButton btnEscalene;
+    private javax.swing.JToggleButton btnFlecha;
+    private javax.swing.JToggleButton btnGreen;
+    private javax.swing.JToggleButton btnHexagon;
+    private javax.swing.JRadioButtonMenuItem btnKite;
+    private javax.swing.JToggleButton btnLapiz;
+    private javax.swing.JToggleButton btnLinea;
+    private javax.swing.JToggleButton btnOvalo;
+    private javax.swing.JToggleButton btnParallelogram;
+    private javax.swing.JToggleButton btnPentagon;
+    private javax.swing.JToggleButton btnRectangulo;
+    private javax.swing.JToggleButton btnRed;
+    private javax.swing.JButton btnRestablecerColores;
+    private javax.swing.JToggleButton btnRombo;
+    private javax.swing.JToggleButton btnSemiCircle;
+    private javax.swing.JToggleButton btnStrat;
+    private javax.swing.JToggleButton btnTriangle;
+    private javax.swing.JToggleButton btnTrianguloRectangulo;
+    private javax.swing.JToggleButton btnWhite;
+    private javax.swing.JToggleButton btnYellow;
+    private javax.swing.ButtonGroup grupoBotonesFiguras;
+    private javax.swing.ButtonGroup grupoBotonesRellenoColores;
+    private javax.swing.ButtonGroup grupoDeColores;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuItem jMenuItem1;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem2_Save2;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem1;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem2;
+    private javax.swing.JRadioButtonMenuItem jRadioButtonMenuItem3;
+    private javax.swing.JPopupMenu.Separator jSeparator1;
+    private javax.swing.JToolBar.Separator jSeparator2;
+    private javax.swing.JToolBar.Separator jSeparator3;
+    private javax.swing.JToolBar.Separator jSeparator4;
+    private javax.swing.JToolBar.Separator jSeparator5;
+    private javax.swing.JRadioButtonMenuItem menuItemAnillo;
+    private javax.swing.JRadioButtonMenuItem menuItemCuadrado;
+    private javax.swing.JRadioButtonMenuItem menuItemCubeta;
+    private javax.swing.JRadioButtonMenuItem menuItemLapiz;
+    private javax.swing.JRadioButtonMenuItem menuItemLinea;
+    private javax.swing.JRadioButtonMenuItem menuItemOvalo;
+    private javax.swing.JRadioButtonMenuItem menuItemParalelogramo;
+    private javax.swing.JRadioButtonMenuItem menuItemRectangulo;
+    private javax.swing.JRadioButtonMenuItem menuItemRombo;
+    private javax.swing.JRadioButtonMenuItem menuItemSemiCirculo;
+    private javax.swing.JRadioButtonMenuItem menuItemTriangulo;
+    private javax.swing.JRadioButtonMenuItem menuItemTrianguloRectangulo;
+    private javax.swing.JRadioButtonMenuItem menuitemCrescent;
+    // End of variables declaration//GEN-END:variables
 
     public javax.swing.JRadioButtonMenuItem getMenuItemLapiz() {
         return menuItemLapiz;
@@ -822,6 +838,10 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         return btnAnillo;
     }
     
+    public javax.swing.JToggleButton getBtnOvalo() {
+        return btnOvalo;
+    }
+    
 //Guardar Como
     public void savefile() {
         BufferedImage image2 = new BufferedImage(PanelDeDibujo.WIDTH, PanelDeDibujo.HEIGHT, BufferedImage.TYPE_INT_RGB);
@@ -849,5 +869,9 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
     public javax.swing.JRadioButtonMenuItem getMenuItemTriangulo() {
         return menuItemTriangulo;
+    }
+    
+    public javax.swing.JRadioButtonMenuItem getMenuItemOvalo() {
+        return menuItemOvalo;
     }
 }

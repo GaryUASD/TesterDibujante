@@ -71,6 +71,8 @@ public class PanelDeDibujo extends JPanel {
             
         }else if (ventana.getMenuItemParalelogramo().isSelected()) {
             figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, colorDeFondo);
+        }else if (ventana.getMenuItemOvalo().isSelected()) {
+            figuraActual = new Ovalo(evento.getPoint(), colorDeBorde);
         }else{
           figuraActual = new DibujoLibre(evento.getPoint());
         }
@@ -102,6 +104,8 @@ public class PanelDeDibujo extends JPanel {
            figuraActual = new Flecha(evento.getPoint(), colorDeBorde, colorDeFondo);
         }else if (ventana.getBtnParallelogram().isSelected()) {
            figuraActual = new Paralelogramo(evento.getPoint(), colorDeBorde, colorDeFondo);
+        }else if (ventana.getBtnOvalo().isSelected()) {
+           figuraActual = new Ovalo(evento.getPoint(), colorDeBorde, colorDeFondo);
         }
                 figuraActual.setColor(colorDeBorde);
                 figuras.add(figuraActual);
