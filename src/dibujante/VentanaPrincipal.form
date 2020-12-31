@@ -174,6 +174,9 @@
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemTrianguloEscaleno">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Triangulo Escaleno"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/scalene.png"/>
@@ -185,25 +188,23 @@
             </MenuItem>
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="MenuItemFlecha">
               <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
                 <Property name="text" type="java.lang.String" value="Flecha"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/arrow.png"/>
                 </Property>
               </Properties>
             </MenuItem>
-
             <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemParalelogramo">
-
-
-            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemSemiCirculo">
               <Properties>
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="SemiCirculo"/>
-                <Property name="toolTipText" type="java.lang.String" value="SemiCirculo"/>
+                <Property name="text" type="java.lang.String" value="Paralelogramo"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icons/semicircle.png"/>
+                  <Image iconType="3" name="/icons/parallelogram.png"/>
                 </Property>
               </Properties>
             </MenuItem>
@@ -212,10 +213,20 @@
                 <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
-                <Property name="text" type="java.lang.String" value="crescent"/>
-                <Property name="toolTipText" type="java.lang.String" value="Media Luna"/>
+                <Property name="text" type="java.lang.String" value="Crescent"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/moon-phase-outline_icon-icons.com_73483.png"/>
+                </Property>
+              </Properties>
+            </MenuItem>
+            <MenuItem class="javax.swing.JRadioButtonMenuItem" name="menuItemSemiCirculo">
+              <Properties>
+                <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
+                  <ComponentRef name="grupoBotonesFiguras"/>
+                </Property>
+                <Property name="text" type="java.lang.String" value="SemiCirculo"/>
+                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+                  <Image iconType="3" name="/icons/semicircle.png"/>
                 </Property>
               </Properties>
             </MenuItem>
@@ -225,25 +236,11 @@
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
                 <Property name="text" type="java.lang.String" value="Anillo"/>
-                <Property name="toolTipText" type="java.lang.String" value="Anillo"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
                   <Image iconType="3" name="/icons/circle_double_icon_137762.png"/>
                 </Property>
               </Properties>
             </MenuItem>
-
-
-              <Properties>
-                <Property name="text" type="java.lang.String" value="Paralelogramo"/>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/icons/parallelogram.png"/>
-                </Property>
-              </Properties>
-
-            </MenuItem>
-
-
-
           </SubComponents>
         </Menu>
       </SubComponents>
