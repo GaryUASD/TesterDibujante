@@ -251,7 +251,7 @@
                 </Property>
                 <Property name="text" type="java.lang.String" value="Octagono"/>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Jose Herrera\Documents\NetBeansProjects\DibujanteSede\DibujanteSede\DibujanteSede\src\icons\059octagon_99897 (1).png"/>
+                  <Image iconType="3" name="/icons/059octagon_99897 (1).png"/>
                 </Property>
               </Properties>
             </MenuItem>
@@ -708,7 +708,7 @@
                   <ComponentRef name="grupoBotonesFiguras"/>
                 </Property>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Users\Jose Herrera\Documents\NetBeansProjects\DibujanteSede\DibujanteSede\DibujanteSede\src\icons\059octagon_99897 (1).png"/>
+                  <Image iconType="3" name="/icons/059octagon_99897 (1).png"/>
                 </Property>
               </Properties>
             </Component>
